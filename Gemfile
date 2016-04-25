@@ -48,6 +48,7 @@ group :development do
 
   # Code style
   gem 'rubocop'
+  gem 'rubocop-rspec'
 end
 
 group :test do

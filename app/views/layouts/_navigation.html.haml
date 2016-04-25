@@ -1,4 +1,4 @@
-%nav.navbar.navbar-inverse.navbar-fixed-top
+%nav.navbar.navbar-default.navbar-static-top
   .container
     .navbar-header
       %button.navbar-toggle(type='button' data-toggle='collapse' data-target='.navbar-collapse')
@@ -9,3 +9,5 @@
       = link_to 'InterConn', root_path, class: 'navbar-brand'
     .collapse.navbar-collapse
       %ul.nav.navbar-nav
+        %li{class: ('active' if params[:id] == 'home')}
+          = link_to 'Home', root_path

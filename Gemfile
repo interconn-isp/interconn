@@ -3,6 +3,7 @@ ruby '2.3.0'
 
 # Rails
 gem 'rails', '4.2.6'
+gem 'rails-i18n'
 
 # Asset processing
 gem 'sass-rails'

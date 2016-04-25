@@ -1,22 +1,7 @@
-Interconn
-================
+# InterConn
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
-provided by the [RailsApps Project](http://railsapps.github.io/).
-
-Rails Composer is supported by developers who purchase our RailsApps tutorials.
-
-Problems? Issues?
------------
-
-Need help? Ask on Stack Overflow with the tag 'railsapps.'
-
-Your application contains diagnostics in the README file. Please provide a copy of the README file when reporting any issues.
-
-If the application doesn't work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
-and include the diagnostics.
+This Rails application serves InterConn's marketing website. You can see a live
+version of it running at http://www.interconn.it.
 
 Ruby on Rails
 -------------
@@ -26,25 +11,55 @@ This application requires:
 - Ruby 2.3.0
 - Rails 4.2.6
 
-Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
-
 Getting Started
 ---------------
 
-Documentation and Support
--------------------------
+Clone the Git repository:
 
-Issues
--------------
+```console
+$ git clone git://github.com/interconn-isp/interconn.git
+```
 
-Similar Projects
-----------------
+Copy and edit the configuration files:
+
+```console
+$ cp config/database.example.yml config/database.yml
+$ cp config/application.example.yml config/application.yml
+```
+
+Install the dependencies:
+
+```console
+$ bundle
+```
+
+Prepare the database:
+
+```console
+$ bundle exec rake db:setup
+```
+
+Finally, run the application:
+
+```console
+$ bundle exec foreman s -f Procfile.development
+```
+
+The application is now running at http://localhost:5000.
 
 Contributing
 ------------
 
+Bug reports and pull requests are welcome on GitHub at
+https://github.com/interconn-isp/interconn.
+
 Credits
 -------
 
+The application is developed and maintained by [Alessandro Desantis](https://github.com/alessandro1997).
+
 License
 -------
+
+The application is available as open source under the terms of the
+[MIT License](http://opensource.org/licenses/MIT).

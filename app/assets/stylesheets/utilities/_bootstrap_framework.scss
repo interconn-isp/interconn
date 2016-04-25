@@ -1,3 +1,32 @@
+<<<<<<< Updated upstream
+=======
+// Import fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
+
+// Typography
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-base: $font-family-sans-serif;
+$font-size-base: 16px;
+
+// Palette
+$palette-primary: rgb(255, 153, 0);
+$palette-secondary: rgb(72, 85, 102);
+$palette-secondary-light: lighten($palette-secondary, 6.5%);
+
+// Navbar
+$navbar-default-bg: $palette-primary;
+$navbar-default-color: white;
+$navbar-default-link-color: white;
+$navbar-default-link-hover-color: white;
+$navbar-default-link-hover-bg: darken($navbar-default-bg, 6.5%);
+$navbar-default-link-active-color: white;
+$navbar-default-link-active-bg: $navbar-default-link-hover-bg;
+$navbar-default-brand-hover-color: $navbar-default-link-color;
+$navbar-default-toggle-hover-bg: $navbar-default-link-hover-bg;
+$navbar-default-toggle-icon-bar-bg: white;
+$navbar-default-toggle-border-color: $navbar-default-toggle-hover-bg;
+
+>>>>>>> Stashed changes
 // Import Bootstrap
 @import "bootstrap-sprockets";
 @import "bootstrap";

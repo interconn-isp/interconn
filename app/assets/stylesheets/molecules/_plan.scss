@@ -1,0 +1,67 @@
+.plan {
+  width: 100%;
+
+  .plan-name {
+    background-color: $palette-secondary;
+    color: white;
+    text-align: center;
+    font-size: $font-size-large;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-left: 1px solid $palette-secondary-light;
+    border-right: 1px solid $palette-secondary-light;
+  }
+
+  .plan-price {
+    background-color: $palette-secondary-light;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-left: 1px solid $palette-secondary;
+    border-right: 1px solid $palette-secondary;
+
+    .plan-price-currency {
+      display: inline-block;
+      font-size: $font-size-small;
+      color: $gray-lighter;
+      margin-top: -30px;
+    }
+
+    .plan-price-digits {
+      display: inline-block;
+      font-size: $font-size-h1;
+    }
+
+    .plan-price-recurrence {
+      display: inline-block;
+      font-size: $font-size-small;
+      color: $gray-lighter;
+    }
+  }
+
+  .plan-feature {
+    border-left: 1px solid $gray-lighter;
+    border-right: 1px solid $gray-lighter;
+    border-bottom: 1px solid $gray-lighter;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .plan-feature-name {
+      text-transform: uppercase;
+      font-size: $font-size-small;
+    }
+
+    .plan-feature-content {
+      font-weight: 700;
+      font-size: $font-size-large;
+    }
+
+    .plan-feature-erased-content {
+      font-size: $font-size-small;
+      color: $brand-danger;
+      text-decoration: line-through;
+    }
+  }
+}

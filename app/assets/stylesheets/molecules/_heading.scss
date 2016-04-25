@@ -1,0 +1,13 @@
+.heading {
+  text-align: center;
+
+  .heading-title {
+    font-size: $font-size-h1;
+    font-weight: 700;
+  }
+
+  .heading-subtitle {
+    font-size: $font-size-h3;
+    color: $gray-light;
+  }
+}

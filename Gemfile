@@ -22,6 +22,7 @@ gem 'pg'
 # Deployment
 gem 'foreman'
 gem 'puma'
+gem 'figaro'
 
 # Views
 gem 'simple_form'

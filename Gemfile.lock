@@ -99,6 +99,7 @@ GEM
       temple (~> 0.7.6)
       thor
       tilt
+    high_voltage (3.0.0)
     i18n (0.7.0)
     interception (0.5)
     jquery-rails (4.1.1)
@@ -262,6 +263,7 @@ DEPENDENCIES
   fuubar
   haml_lint
   hamlit
+  high_voltage
   jquery-rails
   jquery-turbolinks
   launchy

@@ -28,6 +28,9 @@ gem 'figaro'
 gem 'simple_form'
 gem 'hamlit'
 
+# Static pages
+gem 'high_voltage'
+
 group :development, :test do
   # Factories
   gem 'factory_girl_rails'

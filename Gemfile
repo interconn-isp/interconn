@@ -59,6 +59,9 @@ group :test do
 
   # Database cleansing
   gem 'database_cleaner'
+
+  # RSpec
+  gem 'fuubar'
 end
 
 group :production do

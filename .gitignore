@@ -83,3 +83,6 @@ pickle-email-*.html
 # Configuration files
 /config/database.yml
 /config/application.yml
+
+# RSpec temp files
+/spec/examples.txt

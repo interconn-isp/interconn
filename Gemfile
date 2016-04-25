@@ -56,8 +56,8 @@ end
 group :test do
   # Acceptance testing
   gem 'capybara'
+  gem 'capybara-webkit'
   gem 'launchy'
-  gem 'selenium-webdriver'
 
   # Database cleansing
   gem 'database_cleaner'

@@ -1,10 +1,9 @@
 /*
- *= require_tree .
  *= require_self
  */
 
 // Bootstrap
-@import "utilities/_bootstrap";
+@import "utilities/_bootstrap_framework";
 
 // Atoms
 @import "atoms/_images";

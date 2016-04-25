@@ -50,8 +50,11 @@ group :development do
   gem 'pry-rescue'
 
   # Code style
-  gem 'rubocop'
-  gem 'rubocop-rspec'
+  gem 'rubocop', require: false
+  gem 'rubocop-rspec', require: false
+  gem 'haml_lint', require: false
+  gem 'scss_lint', require: false
+  gem 'coffeelint'
 end
 
 group :test do

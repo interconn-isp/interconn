@@ -18,6 +18,7 @@ gem 'bootstrap-sass'
 gem 'pg'
 
 # Deployment
+gem 'foreman'
 gem 'puma'
 
 # Views

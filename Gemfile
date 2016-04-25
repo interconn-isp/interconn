@@ -26,7 +26,7 @@ gem 'figaro'
 
 # Views
 gem 'simple_form'
-gem 'slim-rails'
+gem 'hamlit'
 
 group :development, :test do
   # Factories

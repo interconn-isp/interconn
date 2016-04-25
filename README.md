@@ -1,7 +1,8 @@
 # InterConn
 
-This Rails application serves InterConn's marketing website. You can see a live
-version of it running at http://www.interconn.it.
+This Rails application serves InterConn's marketing website.
+
+You can see a live version of it running at http://www.interconn.it.
 
 Ruby on Rails
 -------------

@@ -1,13 +1,19 @@
 .heading {
+  margin-top: 50px;
+  margin-bottom: 50px;
   text-align: center;
 
   .heading-title {
     font-size: $font-size-h1;
     font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .heading-subtitle {
     font-size: $font-size-h3;
     color: $gray-light;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }

@@ -1,19 +1,109 @@
+.heading
+  %h1.heading-title Veloce, costante, affidabile.
+  %p.heading-subtitle L'offerta originaria. L'ideale per casa e azienda.
+
 .container
-  .heading
-    %h1.heading-title Veloce, costante, affidabile.
-    %p.heading-subtitle L'offerta originaria. L'ideale per casa e azienda.
-
   .plans
-    - 4.times do
-      .plan
-        .plan-name 7 Mega Privati
+    .plan
+      .plan-name 7 Mega Privati
 
-        .plan-price
-          .plan-price-currency €
-          .plan-price-digits 24
-          .plan-price-recurrence / mese
+      .plan-price
+        .plan-price-currency €
+        .plan-price-digits 24
+        .plan-price-recurrence / mese
 
-        .plan-feature
-          .plan-feature-name Installazione
-          .plan-feature-content € 100 u.t.
-          .plan-feature-erased-content € 180 u.t.
+      .plan-feature
+        .plan-feature-name Installazione
+        .plan-feature-content € 100 u.t.
+        .plan-feature-erased-content € 180 u.t.
+
+      .plan-feature.plan-feature-2x
+        .plan-feature-name Velocità di picco
+        .plan-feature-content 7 Mbps / 3 Mbps
+
+      .plan-feature.plan-feature-highlight
+        .plan-feature-name IP statici
+        .plan-feature-content € 6 / mese
+
+      .plan-action
+        = link_to 'Attiva Offerta', '#', class: 'btn btn-primary'
+
+    .plan
+      .plan-name 10 Mega Privati
+
+      .plan-price
+        .plan-price-currency €
+        .plan-price-digits 31
+        .plan-price-recurrence / mese
+
+      .plan-feature
+        .plan-feature-name Installazione
+        .plan-feature-content € 100 u.t.
+        .plan-feature-erased-content € 180 u.t.
+
+      .plan-feature.plan-feature-2x
+        .plan-feature-name Velocità di picco
+        .plan-feature-content 10 Mbps / 3 Mbps
+
+      .plan-feature.plan-feature-highlight
+        .plan-feature-name IP statici
+        .plan-feature-content € 6 / mese
+
+      .plan-action
+        = link_to 'Attiva Offerta', '#', class: 'btn btn-primary'
+
+    .plan
+      .plan-name 4 Mega Business
+
+      .plan-price
+        .plan-price-currency €
+        .plan-price-digits 39
+        .plan-price-recurrence / mese
+
+      .plan-feature
+        .plan-feature-name Installazione
+        .plan-feature-content € 180 u.t.
+        .plan-feature-erased-content € 245 u.t.
+
+      .plan-feature
+        .plan-feature-name Velocità di picco
+        .plan-feature-content 4 Mbps / 1 Mbps
+
+      .plan-feature
+        .plan-feature-name Banda garantita
+        .plan-feature-content 512 Kbps
+
+      .plan-feature.plan-feature-highlight
+        .plan-feature-name IP statici
+        .plan-feature-content € 6 / mese
+
+      .plan-action
+        = link_to 'Attiva Offerta', '#', class: 'btn btn-primary'
+
+    .plan
+      .plan-name 7 Mega Business
+
+      .plan-price
+        .plan-price-currency €
+        .plan-price-digits 69
+        .plan-price-recurrence / mese
+
+      .plan-feature
+        .plan-feature-name Installazione
+        .plan-feature-content € 180 u.t.
+        .plan-feature-erased-content € 245 u.t.
+
+      .plan-feature
+        .plan-feature-name Velocità di picco
+        .plan-feature-content 7 Mbps / 3 Mbps
+
+      .plan-feature
+        .plan-feature-name Banda garantita
+        .plan-feature-content 512 Kbps
+
+      .plan-feature.plan-feature-highlight
+        .plan-feature-name IP statici
+        .plan-feature-content € 6 / mese
+
+      .plan-action
+        = link_to 'Attiva Offerta', '#', class: 'btn btn-primary'

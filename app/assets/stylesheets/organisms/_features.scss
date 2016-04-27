@@ -1,0 +1,9 @@
+.features {
+  .feature:nth-child(odd) {
+    background-color: $gray-lighter;
+
+    .feature-content {
+      flex-flow: row-reverse;
+    }
+  }
+}

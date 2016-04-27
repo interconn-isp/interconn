@@ -1,0 +1,7 @@
+.list-notes {
+  @extend .list-unstyled;
+
+  li {
+    font-size: $font-size-small;
+  }
+}

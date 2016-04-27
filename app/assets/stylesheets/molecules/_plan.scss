@@ -1,8 +1,8 @@
 .plan {
   width: 100%;
-  max-width: 300px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 
   %plan-item {
     display: flex;

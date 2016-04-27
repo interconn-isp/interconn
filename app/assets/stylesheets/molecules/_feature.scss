@@ -1,0 +1,26 @@
+.feature {
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+  .feature-title {
+    margin-top: 0;
+  }
+
+  .feature-content {
+    display: flex;
+    flex-direction: row;
+
+    .feature-description {
+      width: 75%;
+
+      & > *:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .feature-image {
+      width: 25%;
+      margin-left: auto;
+    }
+  }
+}

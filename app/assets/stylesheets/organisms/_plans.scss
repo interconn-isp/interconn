@@ -2,22 +2,4 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-
-  .plan {
-    @media (max-width: $screen-xs-max) {
-      width: 100%;
-
-      & + .plan {
-        margin-top: 15px;
-      }
-    }
-
-    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-      width: 50%;
-
-      & + .plan {
-        margin-top: 15px;
-      }
-    }
-  }
 }

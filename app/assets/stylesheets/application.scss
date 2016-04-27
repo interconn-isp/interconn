@@ -7,14 +7,17 @@
 
 // Atoms
 @import "atoms/_images";
+@import "atoms/_list_notes";
 
 // Molecules
 @import "molecules/_navbar";
 @import "molecules/_heading";
 @import "molecules/_plan";
+@import "molecules/_feature";
 
 // Organisms
 @import "organisms/_plans";
+@import "organisms/_features";
 
 // Templates
 @import "templates/plans/_wadsl";

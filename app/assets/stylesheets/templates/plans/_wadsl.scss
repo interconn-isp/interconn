@@ -1,5 +1,17 @@
 .plans-wadsl {
   .plan {
     width: 25%;
+
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      width: 50%;
+    }
+  }
+
+  .features {
+    margin-top: 50px;
   }
 }

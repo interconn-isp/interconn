@@ -9,18 +9,32 @@
   .feature-content {
     display: flex;
     flex-direction: row;
+    margin: 0 auto;
+    max-width: 800px;
 
     .feature-description {
-      width: 75%;
+      font-size: $font-size-large;
+      color: $gray-light;
 
       & > *:last-child {
         margin-bottom: 0;
       }
     }
+  }
 
-    .feature-image {
-      width: 25%;
-      margin-left: auto;
+  .feature-body {
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .feature-image {
+    width: 35%;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    img {
+      width: 100%;
     }
   }
 }

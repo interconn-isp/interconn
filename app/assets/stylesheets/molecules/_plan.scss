@@ -1,13 +1,14 @@
-%plan-item {
-  display: flex;
-  align-self: stretch;
-  justify-content: center;
-}
-
 .plan {
   width: 100%;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
+
+  %plan-item {
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+  }
 
   .plan-name {
     @extend %plan-item;

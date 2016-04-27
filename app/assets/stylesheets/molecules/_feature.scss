@@ -12,6 +12,11 @@
     margin: 0 auto;
     max-width: 800px;
 
+    @media (max-width: $screen-xs-max) {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+
     .feature-description {
       font-size: $font-size-large;
       color: $gray-light;
@@ -24,14 +29,20 @@
 
   .feature-body {
     width: 100%;
-    margin-left: 15px;
-    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .feature-image {
     width: 35%;
-    margin-left: 15px;
-    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (max-width: $screen-xs-max) {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+    }
 
     img {
       width: 100%;

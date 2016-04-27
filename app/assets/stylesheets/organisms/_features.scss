@@ -5,7 +5,9 @@
 
   .feature:nth-child(even) {
     .feature-content {
-      flex-flow: row-reverse;
+      @media (min-width: $screen-sm-min) {
+        flex-direction: row-reverse;
+      }
     }
   }
 }

@@ -112,6 +112,10 @@ GEM
     json (1.8.3)
     launchy (2.4.3)
       addressable (~> 2.3)
+    lograge (0.3.6)
+      actionpack (>= 3)
+      activesupport (>= 3)
+      railties (>= 3)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
@@ -267,6 +271,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   launchy
+  lograge
   pg
   pry-rails
   pry-rescue
@@ -286,5 +291,8 @@ DEPENDENCIES
   turbolinks
   uglifier
 
+RUBY VERSION
+   ruby 2.3.1p112
+
 BUNDLED WITH
-   1.11.2
+   1.12.3

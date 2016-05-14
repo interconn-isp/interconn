@@ -76,4 +76,7 @@ end
 group :production do
   # Heroku
   gem 'rails_12factor'
+
+  # Logging
+  gem 'lograge'
 end

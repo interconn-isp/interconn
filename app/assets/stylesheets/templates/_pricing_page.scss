@@ -2,4 +2,12 @@
   .features {
     margin-top: 50px;
   }
+
+  .list-notes {
+    @media (max-width: $screen-md-max) {
+      li {
+        text-align: center;
+      }
+    }
+  }
 }

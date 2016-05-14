@@ -1,0 +1,48 @@
+.subnav {
+  border-bottom: 1px solid $gray-lighter;
+
+  .subnav-items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    .subnav-item {
+      flex-grow: 1;
+      margin-bottom: -1px;
+      margin-left: -1px;
+      padding: 15px;
+      border-left: 1px solid $gray-lighter;
+      border-bottom: 1px solid $gray-lighter;
+      border-right: 1px solid $gray-lighter;
+      text-align: center;
+
+      &:last-child {
+        border-right: 1px solid $gray-lighter;
+      }
+
+      &:hover {
+        a {
+          color: $gray;
+        }
+      }
+
+      &.active {
+        border-bottom: 2px solid $palette-primary;
+
+        a {
+          color: $gray;
+          font-weight: bold;
+        }
+      }
+
+      a {
+        color: $gray-light;
+        transition: color .25s ease-in-out;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

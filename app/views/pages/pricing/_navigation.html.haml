@@ -1,0 +1,17 @@
+.subnav
+  .container
+    .subnav-items
+      .subnav-item{class: ('active' if params[:id] == 'pricing/wadsl')}
+        = link_to 'WADSL', pricing_wadsl_path
+
+      .subnav-item{class: ('active' if params[:id] == 'pricing/whdsl')}
+        = link_to 'WHDSL', '#'
+
+      .subnav-item{class: ('active' if params[:id] == 'pricing/adsl')}
+        = link_to 'ADSL', '#'
+
+      .subnav-item{class: ('active' if params[:id] == 'pricing/fiber')}
+        = link_to 'Fibra', '#'
+
+      .subnav-item{class: ('active' if params[:id] == 'pricing/voip')}
+        = link_to 'VoIP', '#'

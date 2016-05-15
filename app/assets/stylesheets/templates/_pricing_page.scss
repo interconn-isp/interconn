@@ -10,4 +10,20 @@
       }
     }
   }
+
+  .pricing-page-plans-container {
+    margin: 0 auto;
+  }
+
+  &.pricing-page-four-plans {
+    .pricing-page-plans-container {
+      max-width: $plan-width * 4;
+    }
+  }
+
+  &.pricing-page-three-plans {
+    .pricing-page-plans-container {
+      max-width: $plan-width * 3;
+    }
+  }
 }

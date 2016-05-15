@@ -39,7 +39,7 @@
         color: $gray-light;
         transition: color .25s ease-in-out;
 
-        &:hover {
+        &:hover, &:active {
           text-decoration: none;
         }
       }

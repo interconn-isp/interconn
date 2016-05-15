@@ -2,16 +2,4 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-
-  &.plans-four {
-    .plan {
-      max-width: 285px;
-    }
-  }
-
-  &.plans-three {
-    .plan {
-      max-width: 380px;
-    }
-  }
 }

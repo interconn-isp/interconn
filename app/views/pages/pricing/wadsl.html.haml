@@ -7,7 +7,15 @@
     %h1.heading-title Veloce, costante, affidabile.
     %p.heading-subtitle L'offerta originale: la soluzione per casa e azienda.
 
-.pricing-page-plans-container
+.pricing-page-switch-container
+  .switch
+    .switch-label Privati
+    .switch-control
+      %input.toggle#plans-toggle(type='checkbox' data-plans-selector data-checked-choice='#business-plans' data-unchecked-choice='#individual-plans')
+      %label(for='plans-toggle')
+    .switch-label Aziende
+
+.pricing-page-plans-container#individual-plans
   .plans
     .plan
       .plan-name 8 Mega Privati
@@ -18,8 +26,8 @@
         .plan-price-recurrence / mese*
 
       .plan-feature
-        .plan-feature-name Caparra
-        .plan-feature-content € 150*
+        .plan-feature-name Deposito cauzionale
+        .plan-feature-content € 150
 
       .plan-feature
         .plan-feature-name Installazione
@@ -45,8 +53,8 @@
         .plan-price-recurrence / mese*
 
       .plan-feature
-        .plan-feature-name Caparra
-        .plan-feature-content € 150*
+        .plan-feature-name Deposito cauzionale
+        .plan-feature-content € 150
 
       .plan-feature
         .plan-feature-name Installazione
@@ -72,8 +80,8 @@
         .plan-price-recurrence / mese*
 
       .plan-feature
-        .plan-feature-name Caparra
-        .plan-feature-content € 150*
+        .plan-feature-name Deposito cauzionale
+        .plan-feature-content € 150
 
       .plan-feature
         .plan-feature-name Installazione
@@ -90,6 +98,8 @@
       .plan-action
         = link_to 'Attiva Offerta', '#', class: 'btn btn-primary'
 
+.pricing-page-plans-container#business-plans
+  .plans
     .plan
       .plan-name 4 Mega Business
 
@@ -99,8 +109,8 @@
         .plan-price-recurrence / mese**
 
       .plan-feature
-        .plan-feature-name Caparra
-        .plan-feature-content € 180 u.t.**
+        .plan-feature-name Deposito cauzionale
+        .plan-feature-content € 180
 
       .plan-feature
         .plan-feature-name Installazione
@@ -130,8 +140,8 @@
         .plan-price-recurrence / mese**
 
       .plan-feature
-        .plan-feature-name Caparra
-        .plan-feature-content € 180 u.t.**
+        .plan-feature-name Deposito cauzionale
+        .plan-feature-content € 180
 
       .plan-feature
         .plan-feature-name Installazione
@@ -161,8 +171,8 @@
         .plan-price-recurrence / mese**
 
       .plan-feature
-        .plan-feature-name Caparra
-        .plan-feature-content € 180 u.t.**
+        .plan-feature-name Deposito cauzionale
+        .plan-feature-content € 180
 
       .plan-feature
         .plan-feature-name Installazione
@@ -183,6 +193,7 @@
       .plan-action
         = link_to 'Attiva Offerta', '#', class: 'btn btn-primary'
 
+.pricing-page-plans-container
   %ul.list-notes
     %li (*) Tutti i prezzi sono IVA inclusa.
     %li (**) Tutti i prezzi sono IVA esclusa.

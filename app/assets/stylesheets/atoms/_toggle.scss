@@ -1,0 +1,54 @@
+.toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+
+  & + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    padding: 2px;
+    width: 60px;
+    height: 30px;
+    background-color: $palette-secondary;
+    border-radius: 60px;
+    transition: background 0.4s;
+
+    &:before, &:after {
+      display: block;
+      position: absolute;
+      content: "";
+    }
+
+    &:before {
+      top: 2px;
+      left: 2px;
+      bottom: 2px;
+      right: 2px;
+      background-color: #fff;
+      border-radius: 60px;
+      transition: background 0.4s;
+    }
+
+    &:after {
+      top: 4px;
+      left: 4px;
+      bottom: 4px;
+      width: 22px;
+      background-color: $palette-secondary;
+      border-radius: 26px;
+      transition: margin 0.4s, background 0.4s;
+    }
+  }
+
+  &:checked + label {
+    background-color: $palette-primary;
+
+    &:after {
+      margin-left: 30px;
+      background-color: $palette-primary;
+    }
+  }
+}

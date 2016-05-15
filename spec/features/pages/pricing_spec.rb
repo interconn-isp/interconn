@@ -1,9 +1,14 @@
 RSpec.feature 'The pricing pages' do
-  scenario 'Visiting the WADSL page' do
+  scenario 'Visiting the WADSL page', js: true do
     visit root_path
     click_link 'Piani'
 
-    expect(page).to have_content '7 Mega Privati'
+    expect(page).to have_content '8 Mega Privati'
+    expect(page).not_to have_content '7 Mega Business'
+
+    find('.switch-control').click
+    expect(page).not_to have_content '8 Mega Privati'
+    expect(page).to have_content '7 Mega Business'
   end
 
   scenario 'Visiting the ADSL page' do

@@ -7,6 +7,7 @@ gem 'rails-i18n'
 
 # Asset processing
 gem 'sass-rails'
+gem 'autoprefixer-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 

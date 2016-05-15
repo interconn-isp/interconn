@@ -1,0 +1,87 @@
+- provide :body_class, 'pricing-page pricing-page-one-plan'
+
+= render 'pages/pricing/navigation'
+
+.container
+  .heading
+    %h1.heading-title Chiama la mamma.
+    %p.heading-subtitle Ora non hai più scuse per non farlo.
+
+.pricing-page-plans-container
+  .plans
+    .plan
+      .plan-name InterConn VoIP
+
+      .plan-price
+        .plan-price-currency €
+        .plan-price-digits 3
+        .plan-price-recurrence / mese*
+
+      .plan-feature
+        .plan-feature-name Locali e nazionali
+        .plan-feature-content € 0,017 / min*
+
+      .plan-feature
+        .plan-feature-name Operatori mobili
+        .plan-feature-content € 0,10 / min *
+
+      .plan-feature.plan-feature-highlight
+        .plan-feature-name Apparato preconfigurato
+        .plan-feature-content € 68 u.t.*
+
+      .plan-feature.plan-feature-highlight
+        .plan-feature-name Portabilità numero
+        .plan-feature-content € 15 u.t.*
+
+      .plan-action
+        = link_to 'Attiva Offerta', '#', class: 'btn btn-primary'
+
+  %ul.list-notes
+    %li (*) Tutti i prezzi sono IVA inclusa.
+    %li (**) Tutti i prezzi sono IVA esclusa.
+
+.features
+  .feature
+    .feature-content
+      .feature-body
+        %h3.feature-title Chiavi in mano. Anzi, telefono.
+
+        .feature-description
+          %p
+            Non hai tempo per comprare e configurare un telefono? Lascia che ce
+            ne occupiamo noi. Se vuoi, il nostro operatore arriverà da te con un
+            apparato VoIP configurato e pronto all'uso.
+
+          %strong Quale numero comporrai per primo?
+
+      .feature-image= image_tag 'icons/preconfigured_phone.svg'
+
+  .feature
+    .feature-content
+      .feature-body
+        %h3.feature-title Piccoli costi fanno grandi differenze.
+
+        .feature-description
+          %p
+            Ti è mai capitato che una telefonata di cinque minuti diventasse un
+            resoconto di un'ora e mezza? È in questi casi che si apprezza un
+            provider dai costi contenuti.
+
+          %strong Fai con calma. Te lo puoi permettere.
+
+      .feature-image= image_tag 'icons/competitive_pricing.svg'
+
+  .feature
+    .feature-content
+      .feature-body
+        %h3.feature-title Il tuo tempo vale. E anche tu.
+
+        .feature-description
+          %p
+            Se il tuo hobby è attendere in linea decine di minuti per parlare
+            con operatori incompetenti, sei nel posto sbagliato. Noi abbiamo
+            ideato un supporto clienti degno di questo nome.
+
+          %strong Così hai tempo per le cose che contano.
+
+      .feature-image= image_tag 'icons/support_individuals.svg'

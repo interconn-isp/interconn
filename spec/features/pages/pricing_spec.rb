@@ -6,14 +6,6 @@ RSpec.feature 'The pricing pages' do
     expect(page).to have_content '7 Mega Privati'
   end
 
-  scenario 'Visiting the WHDSL page' do
-    visit root_path
-    click_link 'Piani'
-    click_link 'WHDSL'
-
-    expect(page).to have_content '2 Mega / 1 Mega'
-  end
-
   scenario 'Visiting the ADSL page' do
     visit root_path
     click_link 'Piani'

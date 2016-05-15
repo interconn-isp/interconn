@@ -2,4 +2,8 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+
+  .plan {
+    flex: 1 0 auto;
+  }
 }

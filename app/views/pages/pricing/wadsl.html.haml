@@ -1,4 +1,4 @@
-- provide :body_class, 'pricing-page pricing-page-four-plans'
+- provide :body_class, 'pricing-page pricing-page-three-plans'
 
 = render 'pages/pricing/navigation'
 
@@ -10,21 +10,24 @@
 .pricing-page-plans-container
   .plans
     .plan
-      .plan-name 7 Mega Privati
+      .plan-name 8 Mega Privati
 
       .plan-price
         .plan-price-currency €
-        .plan-price-digits 24
+        .plan-price-digits 26
         .plan-price-recurrence / mese*
 
       .plan-feature
+        .plan-feature-name Caparra
+        .plan-feature-content € 150*
+
+      .plan-feature
         .plan-feature-name Installazione
-        .plan-feature-content € 100 u.t.*
-        .plan-feature-erased-content € 180 u.t.*
+        .plan-feature-content € 30 u.t.*
 
       .plan-feature.plan-feature-2x
         .plan-feature-name Velocità di picco
-        .plan-feature-content 7 Mbps / 3 Mbps
+        .plan-feature-content 8 Mbps / 3 Mbps
 
       .plan-feature.plan-feature-highlight
         .plan-feature-name IP statici
@@ -42,13 +45,43 @@
         .plan-price-recurrence / mese*
 
       .plan-feature
+        .plan-feature-name Caparra
+        .plan-feature-content € 150*
+
+      .plan-feature
         .plan-feature-name Installazione
-        .plan-feature-content € 100 u.t.*
-        .plan-feature-erased-content € 180 u.t.*
+        .plan-feature-content € 30 u.t.*
 
       .plan-feature.plan-feature-2x
         .plan-feature-name Velocità di picco
         .plan-feature-content 10 Mbps / 3 Mbps
+
+      .plan-feature.plan-feature-highlight
+        .plan-feature-name IP statici
+        .plan-feature-content € 6 / mese*
+
+      .plan-action
+        = link_to 'Attiva Offerta', '#', class: 'btn btn-primary'
+
+    .plan
+      .plan-name 20 Mega Privati
+
+      .plan-price
+        .plan-price-currency €
+        .plan-price-digits 35
+        .plan-price-recurrence / mese*
+
+      .plan-feature
+        .plan-feature-name Caparra
+        .plan-feature-content € 150*
+
+      .plan-feature
+        .plan-feature-name Installazione
+        .plan-feature-content € 30 u.t.*
+
+      .plan-feature.plan-feature-2x
+        .plan-feature-name Velocità di picco
+        .plan-feature-content 20 Mbps / 3 Mbps
 
       .plan-feature.plan-feature-highlight
         .plan-feature-name IP statici
@@ -66,9 +99,12 @@
         .plan-price-recurrence / mese**
 
       .plan-feature
-        .plan-feature-name Installazione
+        .plan-feature-name Caparra
         .plan-feature-content € 180 u.t.**
-        .plan-feature-erased-content € 245 u.t.**
+
+      .plan-feature
+        .plan-feature-name Installazione
+        .plan-feature-content € 24,59 u.t.**
 
       .plan-feature
         .plan-feature-name Velocità di picco
@@ -94,9 +130,12 @@
         .plan-price-recurrence / mese**
 
       .plan-feature
-        .plan-feature-name Installazione
+        .plan-feature-name Caparra
         .plan-feature-content € 180 u.t.**
-        .plan-feature-erased-content € 245 u.t.**
+
+      .plan-feature
+        .plan-feature-name Installazione
+        .plan-feature-content € 24,59 u.t.**
 
       .plan-feature
         .plan-feature-name Velocità di picco
@@ -105,6 +144,37 @@
       .plan-feature
         .plan-feature-name Banda garantita
         .plan-feature-content 512 Kbps
+
+      .plan-feature.plan-feature-highlight
+        .plan-feature-name IP statici
+        .plan-feature-content € 4,92 / mese**
+
+      .plan-action
+        = link_to 'Attiva Offerta', '#', class: 'btn btn-primary'
+
+    .plan
+      .plan-name 10 Mega Business
+
+      .plan-price
+        .plan-price-currency €
+        .plan-price-digits 99
+        .plan-price-recurrence / mese**
+
+      .plan-feature
+        .plan-feature-name Caparra
+        .plan-feature-content € 180 u.t.**
+
+      .plan-feature
+        .plan-feature-name Installazione
+        .plan-feature-content € 24,59 u.t.**
+
+      .plan-feature
+        .plan-feature-name Velocità di picco
+        .plan-feature-content 10 Mbps / 3 Mbps
+
+      .plan-feature
+        .plan-feature-name Banda garantita
+        .plan-feature-content 2 Mbps
 
       .plan-feature.plan-feature-highlight
         .plan-feature-name IP statici

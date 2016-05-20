@@ -1,4 +1,7 @@
 .switch {
+  margin-bottom: 25px;
+  text-align: center;
+
   .switch-label {
     display: inline-block;
     text-transform: uppercase;
@@ -6,6 +9,7 @@
     font-weight: bold;
     letter-spacing: 1px;
     cursor: pointer;
+    transition: color .4s;
   }
 
   .switch-control {

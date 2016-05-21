@@ -16,6 +16,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap-sass'
 gem 'jquery-turbolinks'
+gem 'font-awesome-rails'
 
 # ActiveRecord
 gem 'pg'

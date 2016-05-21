@@ -2,13 +2,15 @@
  *= require_self
  */
 
-// Bootstrap
+// Frameworks
 @import "utilities/_bootstrap_framework";
+@import "font-awesome";
 
 // Atoms
 @import "atoms/_images";
 @import "atoms/_list_notes";
 @import "atoms/_toggle";
+@import "atoms/_explainer";
 
 // Molecules
 @import "molecules/_navbar";

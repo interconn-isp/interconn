@@ -3,9 +3,9 @@ $plan-width: 285px;
 .plan {
   width: 100%;
   max-width: $plan-width;
+  -webkit-flex: 1 1 $plan-width;
   display: flex;
   flex-direction: column;
-  flex: 1 1 $plan-width;
   margin-bottom: 10px;
 
   %plan-item {

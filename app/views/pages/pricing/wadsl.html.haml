@@ -11,11 +11,11 @@
   .switch
     .switch-label Privati
     .switch-control
-      %input.toggle#plans-toggle(type='checkbox' data-plans-selector data-checked-choice='#business-plans' data-unchecked-choice='#individual-plans')
+      %input.toggle#plans-toggle(type='checkbox' data-plans-selector data-checked-choice='/businesses' data-unchecked-choice='/individuals')
       %label(for='plans-toggle')
     .switch-label Aziende
 
-.pricing-page-plans-container#individual-plans
+.pricing-page-plans-container(data-plans-id='/individuals')
   .plans.plans-3x
     .plan
       .plan-name 8 Mega Privati
@@ -111,7 +111,7 @@
   %ul.list-notes
     %li (*) Prezzo da considerarsi IVA inclusa.
 
-.pricing-page-plans-container#business-plans
+.pricing-page-plans-container(data-plans-id='/businesses')
   .plans.plans-3x
     .plan
       .plan-name 4 Mega Business

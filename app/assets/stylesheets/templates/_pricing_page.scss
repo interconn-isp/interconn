@@ -15,25 +15,25 @@
     margin: 0 auto;
   }
 
-  &.pricing-page-one-plan {
+  &.pricing-page-1x {
     .pricing-page-plans-container {
       max-width: $plan-width;
     }
   }
 
-  &.pricing-page-two-plans {
+  &.pricing-page-2x {
     .pricing-page-plans-container {
       max-width: $plan-width * 2;
     }
   }
 
-  &.pricing-page-three-plans {
+  &.pricing-page-3x {
     .pricing-page-plans-container {
       max-width: $plan-width * 3;
     }
   }
 
-  &.pricing-page-four-plans {
+  &.pricing-page-4x {
     .pricing-page-plans-container {
       max-width: $plan-width * 4;
     }

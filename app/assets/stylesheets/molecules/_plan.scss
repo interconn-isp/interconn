@@ -5,6 +5,7 @@ $plan-width: 285px;
   max-width: $plan-width;
   display: flex;
   flex-direction: column;
+  flex: 1 1 $plan-width;
   margin-bottom: 10px;
 
   %plan-item {

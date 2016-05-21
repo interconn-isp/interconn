@@ -1,14 +1,14 @@
 .subnav
   .container
     .subnav-items
-      .subnav-item{class: ('active' if params[:id] == 'pricing/wadsl')}
-        = link_to 'WADSL', pricing_wadsl_path
+      %a{href: pricing_wadsl_path, class: 'subnav-item' + (' active' if params[:id] == 'pricing/wadsl').to_s}
+        WADSL
 
-      .subnav-item{class: ('active' if params[:id] == 'pricing/adsl')}
-        = link_to 'ADSL', pricing_adsl_path
+      %a{href: pricing_adsl_path, class: 'subnav-item' + (' active' if params[:id] == 'pricing/adsl').to_s}
+        ADSL
 
-      .subnav-item{class: ('active' if params[:id] == 'pricing/fiber')}
-        = link_to 'Fibra', pricing_fiber_path
+      %a{href: pricing_fiber_path, class: 'subnav-item' + (' active' if params[:id] == 'pricing/fiber').to_s}
+        Fibra
 
-      .subnav-item{class: ('active' if params[:id] == 'pricing/voip')}
-        = link_to 'VoIP', pricing_voip_path
+      %a{href: pricing_voip_path, class: 'subnav-item' + (' active' if params[:id] == 'pricing/voip').to_s}
+        VoIP

@@ -15,33 +15,23 @@
       border-bottom: 1px solid $gray-lighter;
       border-right: 1px solid $gray-lighter;
       text-align: center;
+      color: $gray-light;
+      transition: color .25s ease-in-out, border .05s;
 
       &:last-child {
         border-right: 1px solid $gray-lighter;
       }
 
-      &:hover {
-        a {
-          color: $gray;
-        }
+      &:hover, &:active, &:focus {
+        border-bottom: 2px solid $palette-primary;
+        color: $gray;
+        text-decoration: none;
       }
 
       &.active {
         border-bottom: 2px solid $palette-primary;
-
-        a {
-          color: $gray;
-          font-weight: bold;
-        }
-      }
-
-      a {
-        color: $gray-light;
-        transition: color .25s ease-in-out;
-
-        &:hover, &:active, &:focus {
-          text-decoration: none;
-        }
+        color: $gray;
+        font-weight: bold;
       }
     }
   }

@@ -13,6 +13,7 @@ body.with-fixed-subnav {
   &.subnav-fixed {
     position: fixed;
     top: $navbar-height;
+    z-index: 1000;
   }
 
   .subnav-items {

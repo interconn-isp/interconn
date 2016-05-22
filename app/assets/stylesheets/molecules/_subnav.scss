@@ -1,5 +1,6 @@
 .subnav {
   border-bottom: 1px solid $gray-lighter;
+  background-color: white;
 
   .subnav-items {
     display: flex;
@@ -7,9 +8,9 @@
     justify-content: space-around;
 
     .subnav-item {
+      position: relative;
       flex-grow: 1;
       margin-bottom: -1px;
-      margin-left: -1px;
       padding: 20px 15px;
       border-left: 1px solid $gray-lighter;
       border-bottom: 1px solid $gray-lighter;
@@ -29,6 +30,7 @@
       }
 
       &.active {
+        z-index: 1000;
         border-bottom: 2px solid $palette-primary;
         color: $gray;
         font-weight: bold;

@@ -1,10 +1,10 @@
 $plan-width: 285px;
 
 .plan {
+  display: flex;
+  flex: 1 1 $plan-width;
   width: $plan-width;
   max-width: $plan-width;
-  flex: 1 1 $plan-width;
-  display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 
@@ -27,9 +27,6 @@ $plan-width: 285px;
   }
 
   .plan-name {
-    @extend %plan-item;
-    flex-direction: column;
-
     padding: 15px;
     border-left: 1px solid $palette-secondary-light;
     border-right: 1px solid $palette-secondary-light;
@@ -48,7 +45,7 @@ $plan-width: 285px;
 
   .plan-price {
     @extend %plan-item;
-    flex-direction: row;
+    flex-direction: column;
 
     padding: 15px;
     border-left: 1px solid $palette-secondary;
@@ -56,6 +53,11 @@ $plan-width: 285px;
     text-align: center;
     background-color: $palette-secondary-light;
     color: white;
+
+    .plan-price-main {
+      @extend %plan-item;
+      flex-direction: row;
+    }
 
     .plan-price-currency {
       align-self: flex-start;
@@ -80,6 +82,17 @@ $plan-width: 285px;
       padding-right: 2.5px;
       font-size: $font-size-small;
       color: $gray-lighter;
+    }
+
+    .plan-price-alternative {
+      margin-top: -5px;
+      font-size: $font-size-smaller;
+      color: $gray-lighter;
+    }
+
+    .plan-price-erased {
+      color: $brand-danger-light;
+      text-decoration: line-through;
     }
   }
 

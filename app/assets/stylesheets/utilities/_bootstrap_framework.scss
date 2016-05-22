@@ -31,3 +31,9 @@ $navbar-default-toggle-border-color: $navbar-default-toggle-hover-bg;
 // Import Bootstrap
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+// Typography
+$font-size-smaller: ceil(($font-size-small * 0.85));
+
+// Colors
+$brand-danger-light: lighten($brand-danger, 15%);

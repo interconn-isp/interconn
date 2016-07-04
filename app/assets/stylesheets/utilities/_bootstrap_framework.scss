@@ -10,22 +10,22 @@ $font-size-base: 16px;
 $palette-primary: rgb(255, 153, 0);
 $palette-secondary: rgb(72, 85, 102);
 $palette-secondary-light: lighten($palette-secondary, 6.5%);
-$palette-highlight: lighten(rgb(255, 239, 215), 3.25%);
+$palette-highlight: #fff6e8;
 
 // Colors
 $brand-primary: $palette-primary;
 
 // Navbar
 $navbar-default-bg: $palette-primary;
-$navbar-default-color: white;
-$navbar-default-link-color: white;
-$navbar-default-link-hover-color: white;
+$navbar-default-color: #fff;
+$navbar-default-link-color: #fff;
+$navbar-default-link-hover-color: #fff;
 $navbar-default-link-hover-bg: darken($navbar-default-bg, 6.5%);
-$navbar-default-link-active-color: white;
+$navbar-default-link-active-color: #fff;
 $navbar-default-link-active-bg: $navbar-default-link-hover-bg;
 $navbar-default-brand-hover-color: $navbar-default-link-color;
 $navbar-default-toggle-hover-bg: $navbar-default-link-hover-bg;
-$navbar-default-toggle-icon-bar-bg: white;
+$navbar-default-toggle-icon-bar-bg: #fff;
 $navbar-default-toggle-border-color: $navbar-default-toggle-hover-bg;
 
 // Import Bootstrap
@@ -33,7 +33,7 @@ $navbar-default-toggle-border-color: $navbar-default-toggle-hover-bg;
 @import "bootstrap";
 
 // Typography
-$font-size-smaller: ceil(($font-size-small * 0.85));
+$font-size-smaller: ceil(($font-size-small * .85));
 
 // Colors
 $brand-danger-light: lighten($brand-danger, 15%);

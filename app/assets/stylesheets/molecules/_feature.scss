@@ -16,14 +16,14 @@
       flex-direction: column-reverse;
       text-align: center;
     }
+  }
 
-    .feature-description {
-      font-size: $font-size-large;
-      color: $gray-light;
+  .feature-description {
+    font-size: $font-size-large;
+    color: $gray-light;
 
-      & > *:last-child {
-        margin-bottom: 0;
-      }
+    & > *:last-child {
+      margin-bottom: 0;
     }
   }
 

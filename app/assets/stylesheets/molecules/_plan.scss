@@ -1,4 +1,7 @@
 $plan-width: 285px;
+$plan-label-color: #fff;
+$plan-name-color: #fff;
+$plan-price-color: #fff;
 
 .plan {
   display: flex;
@@ -23,7 +26,12 @@ $plan-width: 285px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    color: white;
+    color: $plan-label-color;
+
+    & + .plan-name {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
   }
 
   .plan-name {
@@ -33,14 +41,9 @@ $plan-width: 285px;
     border-top-left-radius: $border-radius-base;
     border-top-right-radius: $border-radius-base;
     background-color: $palette-secondary;
-    color: white;
+    color: $plan-name-color;
     font-size: $font-size-large;
     text-align: center;
-  }
-
-  .plan-label + .plan-name {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
   }
 
   .plan-price {
@@ -52,7 +55,7 @@ $plan-width: 285px;
     border-right: 1px solid $palette-secondary;
     text-align: center;
     background-color: $palette-secondary-light;
-    color: white;
+    color: $plan-price-color;
 
     .plan-price-main {
       @extend %plan-item;

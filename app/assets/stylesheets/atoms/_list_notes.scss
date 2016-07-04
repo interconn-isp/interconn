@@ -1,5 +1,7 @@
 .list-notes {
+  // scss-lint:disable PlaceholderInExtend
   @extend .list-unstyled;
+  // scss-lint:enable PlaceholderInExtend
 
   li {
     font-size: $font-size-small;

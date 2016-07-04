@@ -1,4 +1,6 @@
 img {
+  // scss-lint:disable PlaceholderInExtend
   @extend .img-responsive;
+  // scss-lint:enable PlaceholderInExtend
   margin: 0 auto;
 }

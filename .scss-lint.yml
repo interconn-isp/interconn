@@ -1,0 +1,16 @@
+---
+linters:
+  PropertySortOrder:
+    enabled: false
+  PseudoElement:
+    enabled: false
+  QualifyingElement:
+    enabled: false
+  SelectorDepth:
+    enabled: false
+  SingleLinePerSelector:
+    enabled: false
+  StringQuotes:
+    enabled: false
+  UnnecessaryParentReference:
+    enabled: false

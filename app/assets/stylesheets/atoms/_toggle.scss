@@ -14,7 +14,7 @@
     height: 30px;
     background-color: $palette-secondary;
     border-radius: 60px;
-    transition: background 0.4s;
+    transition: background .4s;
 
     &:before, &:after {
       display: block;
@@ -27,9 +27,11 @@
       left: 2px;
       bottom: 2px;
       right: 2px;
+      // scss-lint:disable ColorVariable
       background-color: #fff;
+      // scss-lint:enable ColorVariable
       border-radius: 60px;
-      transition: background 0.4s;
+      transition: background .4s;
     }
 
     &:after {
@@ -39,7 +41,7 @@
       width: 22px;
       background-color: $palette-secondary;
       border-radius: 26px;
-      transition: margin 0.4s, background 0.4s;
+      transition: margin .4s, background .4s;
     }
   }
 

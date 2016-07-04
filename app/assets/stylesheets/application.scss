@@ -1,28 +1,26 @@
-/*
- *= require_self
- */
+//= require_self
 
 // Frameworks
-@import "utilities/_bootstrap_framework";
+@import "utilities/bootstrap_framework";
 @import "font-awesome";
 
 // Atoms
-@import "atoms/_images";
-@import "atoms/_list_notes";
-@import "atoms/_toggle";
-@import "atoms/_explainer";
+@import "atoms/images";
+@import "atoms/list_notes";
+@import "atoms/toggle";
+@import "atoms/explainer";
 
 // Molecules
-@import "molecules/_navbar";
-@import "molecules/_heading";
-@import "molecules/_plan";
-@import "molecules/_feature";
-@import "molecules/_subnav";
-@import "molecules/_switch";
+@import "molecules/navbar";
+@import "molecules/heading";
+@import "molecules/plan";
+@import "molecules/feature";
+@import "molecules/subnav";
+@import "molecules/switch";
 
 // Organisms
-@import "organisms/_plans";
-@import "organisms/_features";
+@import "organisms/plans";
+@import "organisms/features";
 
 // Templates
-@import "templates/_pricing_page";
+@import "templates/pricing_page";

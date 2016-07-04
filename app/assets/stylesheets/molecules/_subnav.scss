@@ -1,14 +1,15 @@
 $subnav-height: 64px;
+$subnav-bg: #fff;
 
-body.with-fixed-subnav {
+.with-fixed-subnav {
   margin-top: $navbar-height + $subnav-height;
 }
 
 .subnav {
-  height: $subnav-height;
   width: 100%;
+  height: $subnav-height;
   border-bottom: 1px solid $gray-lighter;
-  background-color: white;
+  background-color: $subnav-bg;
 
   &.subnav-fixed {
     position: fixed;
@@ -20,40 +21,42 @@ body.with-fixed-subnav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+  }
 
-    .subnav-item {
-      position: relative;
-      flex-grow: 1;
-      margin-bottom: -1px;
-      margin-left: -1px;
-      padding: 20px 15px;
-      border-left: 1px solid $gray-lighter;
-      border-bottom: 1px solid $gray-lighter;
+  .subnav-item {
+    position: relative;
+    flex-grow: 1;
+    margin-bottom: -1px;
+    margin-left: -1px;
+    padding: 20px 15px;
+    transition: color .25s ease-in-out, border .05s;
+    border-right: 1px solid $gray-lighter;
+    border-bottom: 1px solid $gray-lighter;
+    border-left: 1px solid $gray-lighter;
+    color: $gray-light;
+    text-align: center;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
       border-right: 1px solid $gray-lighter;
-      text-align: center;
-      color: $gray-light;
-      transition: color .25s ease-in-out, border .05s;
+    }
 
-      &:first-child {
-        margin-left: 0;
-      }
+    &:hover,
+    &:active,
+    &:focus {
+      border-bottom: 2px solid $palette-primary;
+      color: $gray;
+      text-decoration: none;
+    }
 
-      &:last-child {
-        border-right: 1px solid $gray-lighter;
-      }
-
-      &:hover, &:active, &:focus {
-        border-bottom: 2px solid $palette-primary;
-        color: $gray;
-        text-decoration: none;
-      }
-
-      &.active {
-        z-index: 1000;
-        border-bottom: 2px solid $palette-primary;
-        color: $gray;
-        font-weight: bold;
-      }
+    &.active {
+      border-bottom: 2px solid $palette-primary;
+      color: $gray;
+      font-weight: bold;
+      z-index: 1000;
     }
   }
 }

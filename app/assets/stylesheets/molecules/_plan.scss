@@ -1,11 +1,14 @@
 $plan-width: 285px;
+$plan-label-color: #fff;
+$plan-name-color: #fff;
+$plan-price-color: #fff;
 
 .plan {
   display: flex;
   flex: 1 1 $plan-width;
+  flex-direction: column;
   width: $plan-width;
   max-width: $plan-width;
-  flex-direction: column;
   margin-bottom: 10px;
 
   %plan-item {
@@ -19,40 +22,40 @@ $plan-width: 285px;
     border-top-left-radius: $border-radius-base;
     border-top-right-radius: $border-radius-base;
     background-color: $brand-success;
+    color: $plan-label-color;
     font-size: $font-size-small;
     font-weight: bold;
-    text-transform: uppercase;
     text-align: center;
-    color: white;
+    text-transform: uppercase;
+
+    + .plan-name {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
   }
 
   .plan-name {
     padding: 15px;
-    border-left: 1px solid $palette-secondary-light;
     border-right: 1px solid $palette-secondary-light;
+    border-left: 1px solid $palette-secondary-light;
     border-top-left-radius: $border-radius-base;
     border-top-right-radius: $border-radius-base;
     background-color: $palette-secondary;
-    color: white;
+    color: $plan-name-color;
     font-size: $font-size-large;
     text-align: center;
   }
 
-  .plan-label + .plan-name {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }
-
   .plan-price {
     @extend %plan-item;
-    flex-direction: column;
 
+    flex-direction: column;
     padding: 15px;
-    border-left: 1px solid $palette-secondary;
     border-right: 1px solid $palette-secondary;
-    text-align: center;
+    border-left: 1px solid $palette-secondary;
     background-color: $palette-secondary-light;
-    color: white;
+    color: $plan-price-color;
+    text-align: center;
 
     .plan-price-main {
       @extend %plan-item;
@@ -62,15 +65,15 @@ $plan-width: 285px;
     .plan-price-currency {
       align-self: flex-start;
       margin-top: 9.5px;
-      padding-left: 2.5px;
       padding-right: 2.5px;
-      font-size: $font-size-small;
+      padding-left: 2.5px;
       color: $gray-lighter;
+      font-size: $font-size-small;
     }
 
     .plan-price-digits {
-      padding-left: 2.5px;
       padding-right: 2.5px;
+      padding-left: 2.5px;
       font-size: $font-size-h1;
       font-weight: 700;
     }
@@ -78,16 +81,16 @@ $plan-width: 285px;
     .plan-price-recurrence {
       align-self: flex-end;
       margin-bottom: 9.5px;
-      padding-left: 2.5px;
       padding-right: 2.5px;
-      font-size: $font-size-small;
+      padding-left: 2.5px;
       color: $gray-lighter;
+      font-size: $font-size-small;
     }
 
     .plan-price-alternative {
       margin-top: -5px;
-      font-size: $font-size-smaller;
       color: $gray-lighter;
+      font-size: $font-size-smaller;
     }
 
     .plan-price-erased {
@@ -98,12 +101,12 @@ $plan-width: 285px;
 
   .plan-feature {
     @extend %plan-item;
-    flex-direction: column;
 
+    flex-direction: column;
     padding: 15px;
-    border-left: 1px solid $gray-lighter;
     border-right: 1px solid $gray-lighter;
     border-bottom: 1px solid $gray-lighter;
+    border-left: 1px solid $gray-lighter;
     text-align: center;
 
     .plan-feature-name {
@@ -117,8 +120,8 @@ $plan-width: 285px;
     }
 
     .plan-feature-erased-content {
-      font-size: $font-size-small;
       color: $brand-danger;
+      font-size: $font-size-small;
       text-decoration: line-through;
     }
 

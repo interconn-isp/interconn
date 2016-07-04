@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 RSpec.feature 'The pricing pages' do
   scenario 'Visiting the WADSL page', js: true do
     visit root_path

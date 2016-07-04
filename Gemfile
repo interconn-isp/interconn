@@ -55,7 +55,7 @@ group :development do
   gem 'rubocop-rspec', require: false
   gem 'haml_lint', require: false
   gem 'scss_lint', require: false
-  gem 'coffeelint'
+  gem 'coffeelint', require: false
 end
 
 group :test do

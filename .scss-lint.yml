@@ -1,7 +1,7 @@
 ---
 linters:
   PropertySortOrder:
-    enabled: false
+    order: smacss
   PseudoElement:
     enabled: false
   QualifyingElement:

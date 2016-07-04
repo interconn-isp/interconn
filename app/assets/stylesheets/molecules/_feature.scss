@@ -9,8 +9,8 @@
   .feature-content {
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
     max-width: 800px;
+    margin: 0 auto;
 
     @media (max-width: $screen-xs-max) {
       flex-direction: column-reverse;
@@ -19,8 +19,8 @@
   }
 
   .feature-description {
-    font-size: $font-size-large;
     color: $gray-light;
+    font-size: $font-size-large;
 
     & > *:last-child {
       margin-bottom: 0;
@@ -29,19 +29,19 @@
 
   .feature-body {
     width: 100%;
-    padding-left: 15px;
     padding-right: 15px;
+    padding-left: 15px;
   }
 
   .feature-image {
     width: 35%;
-    padding-left: 15px;
     padding-right: 15px;
+    padding-left: 15px;
 
     @media (max-width: $screen-xs-max) {
-      margin-left: auto;
       margin-right: auto;
       margin-bottom: 15px;
+      margin-left: auto;
     }
 
     img {

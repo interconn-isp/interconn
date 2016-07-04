@@ -6,8 +6,8 @@ body.with-fixed-subnav {
 }
 
 .subnav {
-  height: $subnav-height;
   width: 100%;
+  height: $subnav-height;
   border-bottom: 1px solid $gray-lighter;
   background-color: $subnav-bg;
 
@@ -29,12 +29,12 @@ body.with-fixed-subnav {
     margin-bottom: -1px;
     margin-left: -1px;
     padding: 20px 15px;
-    border-left: 1px solid $gray-lighter;
-    border-bottom: 1px solid $gray-lighter;
-    border-right: 1px solid $gray-lighter;
-    text-align: center;
-    color: $gray-light;
     transition: color .25s ease-in-out, border .05s;
+    border-right: 1px solid $gray-lighter;
+    border-bottom: 1px solid $gray-lighter;
+    border-left: 1px solid $gray-lighter;
+    color: $gray-light;
+    text-align: center;
 
     &:first-child {
       margin-left: 0;
@@ -51,10 +51,10 @@ body.with-fixed-subnav {
     }
 
     &.active {
-      z-index: 1000;
       border-bottom: 2px solid $palette-primary;
       color: $gray;
       font-weight: bold;
+      z-index: 1000;
     }
   }
 }

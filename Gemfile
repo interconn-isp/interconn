@@ -10,6 +10,7 @@ gem 'sass-rails'
 gem 'autoprefixer-rails'
 gem 'uglifier'
 gem 'coffee-rails'
+gem 'sprockets-es6'
 
 # Assets
 gem 'jquery-rails'

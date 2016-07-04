@@ -1,12 +1,12 @@
-$(->
-  updateSwitchLabels = (toggle) ->
-    switchEl = $(toggle).parents('.switch-control').parents('.switch')
+updateSwitchLabels = (toggle) ->
+  switchEl = $(toggle).parents('.switch-control').parents('.switch')
 
-    if $(toggle).is(':checked')
-      switchEl.addClass('checked')
-    else
-      switchEl.removeClass('checked')
+  if $(toggle).is(':checked')
+    switchEl.addClass('checked')
+  else
+    switchEl.removeClass('checked')
 
+$(document).on('turbolinks:load', ->
   $('.toggle')
     .each(->
       updateSwitchLabels(this)

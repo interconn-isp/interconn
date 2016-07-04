@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.3.1'
 
 # Rails
-gem 'rails', '4.2.6'
+gem 'rails', '5.0.0'
 gem 'rails-i18n'
 
 # Asset processing
@@ -15,9 +15,7 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap-sass'
-gem 'jquery-turbolinks'
 gem 'font-awesome-rails'
-gem 'nprogress-rails'
 
 # ActiveRecord
 gem 'pg'
@@ -47,9 +45,6 @@ group :development do
   # Preloading
   gem 'spring'
   gem 'spring-commands-rspec'
-
-  # Logging
-  gem 'quiet_assets'
 
   # Debugging
   gem 'pry-rails'

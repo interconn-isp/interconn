@@ -33,7 +33,7 @@ togglePlansThroughState = ->
       togglePlans(this)
   )
 
-$(->
+$(document).on('turbolinks:load', ->
   togglePlansThroughState()
 
   $('[data-plans-selector]')

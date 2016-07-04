@@ -33,9 +33,6 @@ module InterConn
     config.i18n.default_locale = :it
     config.i18n.available_locales = [:en, :it]
 
-    # Do not swallow errors in after_commit/after_rollback callbacks.
-    config.active_record.raise_in_transactional_callbacks = true
-
     # ActionMailer SMTP configuration.
     config.action_mailer.smtp_settings = {
       address: 'smtp.sendgrid.net',
@@ -55,5 +52,14 @@ module InterConn
 
     # Raise mail delivery errors-
     config.action_mailer.raise_delivery_errors = true
+
+    # Require belongs_to association to be present.
+    config.active_record.belongs_to_required_by_default = true
+
+    # Enable per-form CSRF tokens.
+    config.action_controller.per_form_csrf_tokens = true
+
+    # Check HTTP Origin header to mitigate against CSRF attacks.
+    config.action_controller.forgery_protection_origin_check = true
   end
 end

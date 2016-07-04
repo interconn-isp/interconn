@@ -1,14 +1,10 @@
+- items = { 'wadsl' => 'WADSL', 'adsl' => 'ADSL', 'fiber' => 'Fibra', 'voip' => 'VoIP' }
+
 .subnav.subnav-fixed
   .container
     .subnav-items
-      %a{href: pricing_wadsl_path, class: 'subnav-item' + (' active' if params[:id] == 'pricing/wadsl').to_s}
-        WADSL
+      - items.each_pair do |key, label|
+        - classes = ['subnav-item']
+        - classes << 'active' if params[:id] == "pricing/#{key}"
 
-      %a{href: pricing_adsl_path, class: 'subnav-item' + (' active' if params[:id] == 'pricing/adsl').to_s}
-        ADSL
-
-      %a{href: pricing_fiber_path, class: 'subnav-item' + (' active' if params[:id] == 'pricing/fiber').to_s}
-        Fibra
-
-      %a{href: pricing_voip_path, class: 'subnav-item' + (' active' if params[:id] == 'pricing/voip').to_s}
-        VoIP
+        %a{ href: send("pricing_#{key}_path"), class: classes.join(' ') }= label

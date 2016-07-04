@@ -1,7 +1,9 @@
 %nav.navbar.navbar-default.navbar-fixed-top
   .container
     .navbar-header
-      %button.navbar-toggle(type='button' data-toggle='collapse' data-target='.navbar-collapse')
+      %button.navbar-toggle{ type: 'button',
+      'data-toggle' => 'collapse',
+      'data-target' => '.navbar-collapse' }
         %span.sr-only Mostra/nascondi navigazione
         %span.icon-bar
         %span.icon-bar
@@ -9,7 +11,7 @@
       = link_to 'InterConn', root_path, class: 'navbar-brand'
     .collapse.navbar-collapse
       %ul.nav.navbar-nav
-        %li{class: ('active' if params[:id] == 'home')}
+        %li{ class: ('active' if params[:id] == 'home') }
           = link_to 'Home', root_path
-        %li{class: ('active' if params[:id].start_with?('pricing/'))}
+        %li{ class: ('active' if params[:id].start_with?('pricing/')) }
           = link_to 'Piani', pricing_wadsl_path

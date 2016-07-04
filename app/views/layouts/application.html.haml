@@ -1,7 +1,9 @@
 !!!
-%html{lang: I18n.locale}
+%html{ lang: I18n.locale }
   %head
-    %meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    %meta{ charset: 'utf8' }
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
+
     %title= content_for?(:title) ? yield(:title) : 'InterConn'
 
     = stylesheet_link_tag 'application', :media => 'all', 'data-turbolinks-track' => true
@@ -9,10 +11,10 @@
 
     = csrf_meta_tags
 
-  %body{class: yield(:body_class)}
+  %body{ class: yield(:body_class) }
     %header
       = render 'layouts/navigation'
 
-    %main(role='main')
+    %main{ role: 'main' }
       = render 'layouts/messages'
       = yield

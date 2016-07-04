@@ -1,4 +1,4 @@
-.pricing-page {
+.pricing {
   .features {
     margin-top: 50px;
   }
@@ -11,30 +11,30 @@
     }
   }
 
-  .pricing-page-plans-container {
+  .pricing-plans-container {
     margin: 0 auto;
   }
 
-  &.pricing-page-1x {
-    .pricing-page-plans-container {
+  &.pricing-1x {
+    .pricing-plans-container {
       max-width: $plan-width;
     }
   }
 
-  &.pricing-page-2x {
-    .pricing-page-plans-container {
+  &.pricing-2x {
+    .pricing-plans-container {
       max-width: $plan-width * 2;
     }
   }
 
-  &.pricing-page-3x {
-    .pricing-page-plans-container {
+  &.pricing-3x {
+    .pricing-plans-container {
       max-width: $plan-width * 3;
     }
   }
 
-  &.pricing-page-4x {
-    .pricing-page-plans-container {
+  &.pricing-4x {
+    .pricing-plans-container {
       max-width: $plan-width * 4;
     }
   }

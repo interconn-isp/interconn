@@ -28,7 +28,7 @@ $plan-price-color: #fff;
     text-align: center;
     text-transform: uppercase;
 
-    & + .plan-name {
+    + .plan-name {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
     }

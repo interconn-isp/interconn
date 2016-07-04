@@ -29,8 +29,8 @@ $navbar-default-toggle-icon-bar-bg: #fff;
 $navbar-default-toggle-border-color: $navbar-default-toggle-hover-bg;
 
 // Import Bootstrap
-@import "bootstrap-sprockets";
-@import "bootstrap";
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
 
 // Typography
 $font-size-smaller: ceil(($font-size-small * .85));

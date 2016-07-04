@@ -22,7 +22,7 @@
     color: $gray-light;
     font-size: $font-size-large;
 
-    & > *:last-child {
+    > *:last-child {
       margin-bottom: 0;
     }
   }

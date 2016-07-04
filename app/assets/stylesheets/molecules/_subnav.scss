@@ -1,7 +1,7 @@
 $subnav-height: 64px;
 $subnav-bg: #fff;
 
-body.with-fixed-subnav {
+.with-fixed-subnav {
   margin-top: $navbar-height + $subnav-height;
 }
 
@@ -44,7 +44,9 @@ body.with-fixed-subnav {
       border-right: 1px solid $gray-lighter;
     }
 
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
       border-bottom: 2px solid $palette-primary;
       color: $gray;
       text-decoration: none;

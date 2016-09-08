@@ -61,5 +61,8 @@ module InterConn
 
     # Check HTTP Origin header to mitigate against CSRF attacks.
     config.action_controller.forgery_protection_origin_check = true
+
+    # Dump the schema in SQL rather than Ruby.
+    config.active_record.schema_format = :sql
   end
 end

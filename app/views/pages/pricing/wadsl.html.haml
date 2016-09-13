@@ -12,13 +12,13 @@
     .switch-label Privati
     .switch-control
       %input.toggle#plans-toggle{ type: 'checkbox',
-      'data-plans-selector' => 'true',
-      'data-checked-choice' => '/businesses',
-      'data-unchecked-choice' => '/individuals' }
+      'data-content-toggle' => 'true',
+      'data-content-toggle-option1' => 'business-plans',
+      'data-content-toggle-option2' => 'individual-plans' }
       %label{ for: 'plans-toggle' }
     .switch-label Aziende
 
-.pricing-plans-container{ 'data-plans-id' => '/individuals' }
+.pricing-plans-container(data-content-toggle-id='individual-plans')
   .plans.plans-3x
     .plan
       .plan-name 8 Mega Privati
@@ -120,7 +120,7 @@
   %ul.list-notes
     %li (*) Prezzo da considerarsi IVA inclusa.
 
-.pricing-plans-container{ 'data-plans-id' => '/businesses' }
+.pricing-plans-container(data-content-toggle-id='business-plans')
   .plans.plans-3x
     .plan
       .plan-name 4 Mega Business

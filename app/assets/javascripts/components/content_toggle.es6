@@ -50,6 +50,10 @@ class ContentToggle {
     this.element.addEventListener('click', () => {
       this._enableSelectedOption()
     })
+
+    window.addEventListener('popstate', () => {
+      this.enableOptionFromState()
+    })
   }
 
   _enableSelectedOption() {
@@ -61,16 +65,9 @@ class ContentToggle {
   }
 }
 
-let toggles = []
-
 document.addEventListener('turbolinks:load', () => {
   document.querySelectorAll('[data-content-toggle]').forEach((element) => {
-    toggles.push(new ContentToggle(element))
+    new ContentToggle(element)
   })
 })
 
-window.addEventListener('popstate', (e) => {
-  toggles.forEach((toggle) => {
-    toggle.enableOptionFromState()
-  })
-})

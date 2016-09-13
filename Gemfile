@@ -10,6 +10,7 @@ gem 'sass-rails'
 gem 'autoprefixer-rails'
 gem 'uglifier'
 gem 'coffee-rails'
+gem 'sprockets-es6'
 
 # Assets
 gem 'jquery-rails'
@@ -55,7 +56,6 @@ group :development do
   gem 'rubocop-rspec', require: false
   gem 'haml_lint', require: false
   gem 'scss_lint', require: false
-  gem 'coffeelint', require: false
 end
 
 group :test do

@@ -32,7 +32,9 @@
             lieti di darti tutte le informazioni di cui hai bisogno.
 
         .infobox-footer
-          = mail_to 'support@interconn.it', 'support@interconn.it »', class: 'btn btn-primary btn-block infobox-button'
+          = mail_to('support@interconn.it',
+            'support@interconn.it »',
+            class: 'btn btn-primary btn-block infobox-button')
 
     .col-xs-12.col-sm-6.col-md-4
       .infobox
@@ -46,7 +48,9 @@
             un nuovo prodotto o chiedere la sostituzione di un apparato?
 
         .infobox-footer
-          = link_to 'Apri un ticket »', new_ticket_path, class: 'btn btn-primary btn-block infobox-button'
+          = link_to('Apri un ticket »',
+            new_ticket_path,
+            class: 'btn btn-primary btn-block infobox-button')
 
     .col-xs-12.col-sm-6.col-md-4
       .infobox
@@ -60,7 +64,9 @@
             dal lunedì al venerdì, dalle 9 alle 13 e dalle 14 alle 18.
 
         .infobox-footer
-          = link_to '800-193-724 »', 'tel:800193724', class: 'btn btn-primary btn-block infobox-button'
+          = link_to('800-193-724 »',
+            'tel:800193724',
+            class: 'btn btn-primary btn-block infobox-button')
 
     .col-xs-12.col-sm-6.col-md-4
       .infobox
@@ -74,7 +80,9 @@
             che tu possa trovare da solo le risposte che cerchi.
 
         .infobox-footer
-          = link_to 'Consulta le FAQ »', '#', class: 'btn btn-primary btn-block infobox-button'
+          = link_to('Consulta le FAQ »',
+            '#',
+            class: 'btn btn-primary btn-block infobox-button')
 
     .col-xs-12.col-sm-6.col-md-4
       .infobox
@@ -88,7 +96,9 @@
             Visita la nostra pagina e chatta subito con noi!
 
         .infobox-footer
-          = link_to 'InterConn su Facebook »', 'https://facebook.com/interconn.isp', class: 'btn btn-primary btn-block infobox-button'
+          = link_to('InterConn su Facebook »',
+            'https://facebook.com/interconn.isp',
+            class: 'btn btn-primary btn-block infobox-button')
 
     .col-xs-12.col-sm-6.col-md-4
       .infobox
@@ -102,4 +112,6 @@
             abuso. Ti ricontatteremo per investigare.
 
         .infobox-footer
-          = mail_to 'abuse@interconn.it', 'abuse@interconn.it »', class: 'btn btn-primary btn-block infobox-button'
+          = mail_to('abuse@interconn.it',
+            'abuse@interconn.it »',
+            class: 'btn btn-primary btn-block infobox-button')

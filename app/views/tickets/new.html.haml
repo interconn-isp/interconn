@@ -1,0 +1,33 @@
+- provide :body_class, 'new-ticket'
+
+.container
+  .heading
+    %h1.heading-title Non essere timido!
+    %p.heading-subtitle Fatti avanti: saremo felici di aiutarti.
+
+.infogrid
+  .container
+    .infogrid-items
+      .infogrid-item
+        .infogrid-item-title Numero verde gratuito
+        .infogrid-item-content 800-193-724
+      .infogrid-item
+        .infogrid-item-title Da cellulari e dall'estero
+        .infogrid-item-content 06-833-90-315
+      .infogrid-item
+        .infogrid-item-title Comunicazioni via fax
+        .infogrid-item-content 06-622-04-896
+
+.new-ticket-container
+  = simple_form_for @ticket do |f|
+    .panel.panel-default
+      .panel-body
+        = f.input :full_name
+        = f.input :email
+        = f.input :phone_number
+        = f.input :subject
+        = f.input :body
+
+      .panel-footer
+        %button.btn.btn-lg.btn-primary(type='submit')
+          Invia ticket &raquo;

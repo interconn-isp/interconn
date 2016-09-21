@@ -1,0 +1,14 @@
+.form-control {
+  transition: border .15s ease-in-out;
+  box-shadow: none;
+
+  &:focus {
+    border-color: $brand-primary;
+    box-shadow: none;
+  }
+}
+
+textarea.form-control {
+  @include resizable(vertical);
+  min-height: 200px;
+}

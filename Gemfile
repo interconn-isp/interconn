@@ -21,6 +21,7 @@ gem 'font-awesome-rails'
 # ActiveRecord
 gem 'pg'
 gem 'email_validator'
+gem 'phony_rails'
 
 # Deployment
 gem 'foreman'

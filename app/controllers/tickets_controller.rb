@@ -7,9 +7,13 @@ class TicketsController < ApplicationController
     @ticket = Ticket.new(ticket_params)
 
     if @ticket.save
-      render :created
+      respond_to do |format|
+        format.js { render :created }
+      end
     else
-      render :new
+      respond_to do |format|
+        format.js { render :new }
+      end
     end
   end
 

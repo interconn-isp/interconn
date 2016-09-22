@@ -1,0 +1,62 @@
+- provide :body_class, 'new-ticket'
+
+.container
+  .heading
+    %h1.heading-title Non essere timido!
+    %p.heading-subtitle Fatti avanti: saremo felici di aiutarti.
+
+.new-ticket-container
+  .new-ticket-content
+    .new-ticket-main
+      = simple_form_for @ticket, remote: true do |f|
+        .panel.panel-default
+          .panel-body
+            = f.input :full_name, autofocus: true
+            = f.input :email
+            = f.input :phone_number
+            = f.input :subject
+            = f.input :body
+
+          .panel-footer
+            %button.btn.btn-lg.btn-primary{ type: 'submit' } Invia ticket »
+
+    .new-ticket-sidebar
+      .panel.panel-default
+        .panel-heading
+          %h3.panel-title Stato dei servizi
+          = fa_icon 'heartbeat', class: 'panel-icon'
+
+        .panel-body
+          %ul.list-unstyled
+            %li
+              %strong Navigazione:
+              %span.text-success Operativo
+
+            %li
+              %strong Server email:
+              %span.text-info In manutenzione
+
+            %li
+              %strong DNS primario:
+              %span.text-warning Parzialmente inoperativo
+
+            %li
+              %strong DNS secondario:
+              %span.text-danger Inoperativo
+
+        .panel-footer
+          = link_to 'Consulta lo stato dettagliato »', '#'
+
+      .panel.panel-default
+        .panel-heading
+          %h3.panel-title Hai già controllato queste FAQ?
+          = fa_icon 'question-circle', class: 'panel-icon'
+
+        .panel-body
+          %ul.list-unstyled
+            %li= link_to 'Come avviene la fatturazione?', '#'
+            %li= link_to 'Come avviene la tariffazione?', '#'
+            %li= link_to 'Come posso pagare?', '#'
+
+        .panel-footer
+          = link_to 'Vai alle Domande frequenti »', '#'

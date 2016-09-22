@@ -1,6 +1,20 @@
 .new-ticket {
   .new-ticket-container {
-    max-width: 600px;
+    max-width: 1000px;
     margin: 0 auto;
+  }
+
+  .new-ticket-content {
+    @include make-row();
+  }
+
+  .new-ticket-main {
+    @include make-xs-column(12);
+    @include make-md-column(7);
+  }
+
+  .new-ticket-sidebar {
+    @include make-xs-column(12);
+    @include make-md-column(5);
   }
 }

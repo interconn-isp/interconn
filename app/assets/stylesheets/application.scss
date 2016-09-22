@@ -22,6 +22,8 @@
 @import 'molecules/progress_bar';
 @import 'molecules/infogrid';
 @import 'molecules/infobox';
+@import 'molecules/panel';
+@import 'molecules/list_group';
 
 // Organisms
 @import 'organisms/plans';
@@ -30,3 +32,4 @@
 // Templates
 @import 'templates/pricing';
 @import 'templates/new_ticket';
+@import 'templates/ticket_created';

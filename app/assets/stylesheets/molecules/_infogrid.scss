@@ -37,9 +37,13 @@ $subnav-margin-bottom: 30px;
     }
 
     .infogrid-item-content {
-      color: $palette-primary;
       font-size: ceil($font-size-large * 1.5);
       font-weight: 700;
+      color: $palette-primary;
+
+      & > a {
+        color: $palette-primary;
+      }
     }
   }
 }

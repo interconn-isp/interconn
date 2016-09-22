@@ -1,0 +1,20 @@
+.panel {
+  .panel-heading {
+    @include clearfix();
+
+    .panel-title {
+      float: left;
+    }
+
+    .panel-icon {
+      float: right;
+      font-size: ceil($font-size-base * 1.125);
+    }
+  }
+
+  .panel-body {
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

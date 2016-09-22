@@ -3,8 +3,16 @@
   box-shadow: none;
 
   &:focus {
-    border-color: $brand-primary;
+    border-color: $palette-secondary;
     box-shadow: none;
+  }
+
+  .has-error & {
+    box-shadow: none;
+
+    &:focus {
+      box-shadow: none;
+    }
   }
 }
 

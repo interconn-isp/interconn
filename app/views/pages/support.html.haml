@@ -1,0 +1,117 @@
+.container
+  .heading
+    %h1.heading-title Noi aspettiamo te.
+    %p.heading-subtitle Tu che cosa stai aspettando? Fatti avanti!
+
+.infogrid
+  .container
+    .infogrid-items
+      .infogrid-item
+        .infogrid-item-title Numero verde
+        .infogrid-item-content= link_to '800-193-724', 'tel:800193724'
+
+      .infogrid-item
+        .infogrid-item-title Cellulari ed estero
+        .infogrid-item-content= link_to '06-833-90-315', 'tel:+390683390315'
+
+      .infogrid-item
+        .infogrid-item-title Fax
+        .infogrid-item-content 06-622-04-896
+
+.container
+  .row
+    .col-xs-12.col-sm-6.col-md-4
+      .infobox
+        .infobox-heading
+          .infobox-icon= fa_icon 'envelope-o'
+          %h2.infobox-title Inviaci un'email
+
+        .infobox-body
+          %p
+            Inviaci un'email se vuoi saperne di più su di noi o sui nostri servizi: saremo
+            lieti di darti tutte le informazioni di cui hai bisogno.
+
+        .infobox-footer
+          = mail_to('support@interconn.it',
+            'support@interconn.it »',
+            class: 'btn btn-primary btn-block infobox-button')
+
+    .col-xs-12.col-sm-6.col-md-4
+      .infobox
+        .infobox-heading
+          .infobox-icon= fa_icon 'ticket'
+          %h2.infobox-title Apri un ticket
+
+        .infobox-body
+          %p
+            Vuoi segnalare un guasto, modificare i dati del tuo contratto, attivare
+            un nuovo prodotto o chiedere la sostituzione di un apparato?
+
+        .infobox-footer
+          = link_to('Apri un ticket »',
+            new_ticket_path,
+            class: 'btn btn-primary btn-block infobox-button')
+
+    .col-xs-12.col-sm-6.col-md-4
+      .infobox
+        .infobox-heading
+          .infobox-icon= fa_icon 'phone'
+          %h2.infobox-title Facci uno squillo
+
+        .infobox-body
+          %p
+            Se preferisci parlare direttamente con un operatore, chiamaci! Siamo qui
+            dal lunedì al venerdì, dalle 9 alle 13 e dalle 14 alle 18.
+
+        .infobox-footer
+          = link_to('800-193-724 »',
+            'tel:800193724',
+            class: 'btn btn-primary btn-block infobox-button')
+
+    .col-xs-12.col-sm-6.col-md-4
+      .infobox
+        .infobox-heading
+          .infobox-icon= fa_icon 'question-circle'
+          %h2.infobox-title Domande frequenti
+
+        .infobox-body
+          %p
+            Abbiamo raccolto le domande più comuni su InterConn e sui nostri servizi, in modo
+            che tu possa trovare da solo le risposte che cerchi.
+
+        .infobox-footer
+          = link_to('Consulta le FAQ »',
+            '#',
+            class: 'btn btn-primary btn-block infobox-button')
+
+    .col-xs-12.col-sm-6.col-md-4
+      .infobox
+        .infobox-heading
+          .infobox-icon= fa_icon 'facebook'
+          %h2.infobox-title Scrivici su Facebook
+
+        .infobox-body
+          %p
+            Siamo online su Facebook per rispondere ai tuoi dubbi e risolvere i tuoi problemi.
+            Visita la nostra pagina e chatta subito con noi!
+
+        .infobox-footer
+          = link_to('InterConn su Facebook »',
+            'https://facebook.com/interconn.isp',
+            class: 'btn btn-primary btn-block infobox-button')
+
+    .col-xs-12.col-sm-6.col-md-4
+      .infobox
+        .infobox-heading
+          .infobox-icon= fa_icon 'exclamation-triangle'
+          %h2.infobox-title Segnala un abuso
+
+        .infobox-body
+          %p
+            Aiutaci a combattere l'uso scorretto dei nostri servizi segnalando qualunque forma di
+            abuso. Ti ricontatteremo per investigare.
+
+        .infobox-footer
+          = mail_to('abuse@interconn.it',
+            'abuse@interconn.it »',
+            class: 'btn btn-primary btn-block infobox-button')

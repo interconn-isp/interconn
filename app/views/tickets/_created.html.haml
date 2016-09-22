@@ -1,0 +1,32 @@
+.container
+  .heading
+    %h1.heading-title Il tuo ticket è stato inviato.
+    %p.heading-subtitle Sarai ricontattato tra poco da un operatore.
+
+.ticket-created-container
+  .panel.panel-default
+    .list-group
+      .list-group-item
+        %strong Nome:
+        = @ticket.full_name
+
+      .list-group-item
+        %strong E-mail:
+        = @ticket.email
+
+      - if @ticket.phone_number.present?
+        .list-group-item
+          %strong Numero di telefono:
+          = @ticket.phone_number.phony_formatted(spaces: '-')
+
+      .list-group-item
+        %strong Oggetto:
+        = @ticket.subject
+
+      .list-group-item
+        %p
+          %strong Messaggio:
+        = simple_format @ticket.body
+
+    .panel-footer
+      = link_to 'Torna al Centro assistenza »', support_path

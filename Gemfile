@@ -20,6 +20,8 @@ gem 'font-awesome-rails'
 
 # ActiveRecord
 gem 'pg'
+gem 'email_validator'
+gem 'phony_rails'
 
 # Deployment
 gem 'foreman'
@@ -40,6 +42,7 @@ group :development, :test do
 
   # RSpec
   gem 'rspec-rails'
+  gem 'shoulda-matchers'
 end
 
 group :development do

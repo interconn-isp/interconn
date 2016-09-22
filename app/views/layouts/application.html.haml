@@ -11,10 +11,13 @@
 
     = csrf_meta_tags
 
+    - if content_for?(:turbolinks_cache_control)
+      %meta{ name: 'turbolinks-cache-control', content: yield(:turbolinks_cache_control) }
+
   %body{ class: yield(:body_class) }
     %header
       = render 'layouts/navigation'
 
     %main{ role: 'main' }
       = render 'layouts/messages'
-      = yield
+      #page-content= yield

@@ -1,0 +1,49 @@
+$subnav-vpadding: 15px;
+$subnav-hpadding: 15px;
+$subnav-margin-bottom: 30px;
+
+.infogrid {
+  width: 100%;
+  margin-bottom: $subnav-margin-bottom;
+  border-top: 1px solid $gray-lighter;
+  border-bottom: 1px solid $gray-lighter;
+}
+
+.infogrid-items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.infogrid-item {
+  flex-grow: 1;
+  margin-bottom: -1px;
+  margin-left: -1px;
+  padding-top: $subnav-vpadding;
+  padding-right: $subnav-hpadding;
+  padding-bottom: $subnav-vpadding;
+  padding-left: $subnav-hpadding;
+  border-right: 1px solid $gray-lighter;
+  border-bottom: 1px solid $gray-lighter;
+  border-left: 1px solid $gray-lighter;
+  text-align: center;
+
+  &:first-child {
+    border-left: 1px solid $gray-lighter;
+  }
+}
+
+.infogrid-item-title {
+  font-size: $font-size-small;
+  text-transform: uppercase;
+}
+
+.infogrid-item-content {
+  color: $palette-primary;
+  font-size: ceil($font-size-large * 1.5);
+  font-weight: 700;
+
+  > a {
+    color: $palette-primary;
+  }
+}

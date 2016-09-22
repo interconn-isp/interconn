@@ -1,0 +1,22 @@
+.form-control {
+  transition: border .15s ease-in-out;
+  box-shadow: none;
+
+  &:focus {
+    border-color: $palette-secondary;
+    box-shadow: none;
+  }
+
+  .has-error & {
+    box-shadow: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+textarea.form-control {
+  @include resizable(vertical);
+  min-height: 200px;
+}

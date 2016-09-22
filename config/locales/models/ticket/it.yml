@@ -1,0 +1,9 @@
+it:
+  simple_form:
+    labels:
+      ticket:
+        full_name: 'Nome e cognome:'
+        email: 'Indirizzo e-mail:'
+        phone_number: 'Numero di telefono:'
+        subject: 'Oggetto:'
+        body: 'Messaggio:'

@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
   root to: 'high_voltage/pages#show', id: 'home'
 
-  get '/pricing/wadsl', to: 'high_voltage/pages#show', id: 'pricing/wadsl'
-  get '/pricing/adsl', to: 'high_voltage/pages#show', id: 'pricing/adsl'
-  get '/pricing/fiber', to: 'high_voltage/pages#show', id: 'pricing/fiber'
-  get '/pricing/voip', to: 'high_voltage/pages#show', id: 'pricing/voip'
+  %w(wadsl adsl fiber voip).each do |section|
+    get "/pricing/#{section}", to: 'high_voltage/pages#show', id: "pricing/#{section}"
+  end
+
+  get '/support', to: 'high_voltage/pages#show', id: 'support'
+
+  get '/contact', to: 'tickets#new', as: 'new_ticket'
+  post '/contact', to: 'tickets#create', as: 'tickets'
 end

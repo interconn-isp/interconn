@@ -13,5 +13,7 @@
       %ul.nav.navbar-nav
         %li{ class: ('active' if params[:id] == 'home') }
           = link_to 'Home', root_path
-        %li{ class: ('active' if params[:id].start_with?('pricing/')) }
+        %li{ class: ('active' if params[:id].to_s.start_with?('pricing/')) }
           = link_to 'Piani', pricing_wadsl_path
+        %li{ class: ('active' if params[:id] == 'support' || params[:controller] == 'tickets') }
+          = link_to 'Supporto', support_path

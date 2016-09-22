@@ -70,4 +70,3 @@ document.addEventListener('turbolinks:load', () => {
     new ContentToggle(element)
   })
 })
-

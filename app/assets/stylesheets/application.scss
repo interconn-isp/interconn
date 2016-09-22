@@ -5,10 +5,12 @@
 @import 'font-awesome';
 
 // Atoms
-@import 'atoms/images';
+@import 'atoms/image';
 @import 'atoms/list_notes';
 @import 'atoms/toggle';
 @import 'atoms/explainer';
+@import 'atoms/form_control';
+@import 'atoms/button';
 
 // Molecules
 @import 'molecules/navbar';
@@ -18,6 +20,10 @@
 @import 'molecules/subnav';
 @import 'molecules/switch';
 @import 'molecules/progress_bar';
+@import 'molecules/infogrid';
+@import 'molecules/infobox';
+@import 'molecules/panel';
+@import 'molecules/list_group';
 
 // Organisms
 @import 'organisms/plans';
@@ -25,3 +31,5 @@
 
 // Templates
 @import 'templates/pricing';
+@import 'templates/new_ticket';
+@import 'templates/ticket_created';

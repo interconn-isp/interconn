@@ -55,6 +55,48 @@ CREATE TABLE schema_migrations (
 
 
 --
+-- Name: tickets; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE tickets (
+    id integer NOT NULL,
+    full_name character varying NOT NULL,
+    phone_number character varying,
+    email character varying NOT NULL,
+    subject character varying NOT NULL,
+    body text NOT NULL,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL
+);
+
+
+--
+-- Name: tickets_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE tickets_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: tickets_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE tickets_id_seq OWNED BY tickets.id;
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY tickets ALTER COLUMN id SET DEFAULT nextval('tickets_id_seq'::regclass);
+
+
+--
 -- Name: ar_internal_metadata_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -71,11 +113,19 @@ ALTER TABLE ONLY schema_migrations
 
 
 --
+-- Name: tickets_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY tickets
+    ADD CONSTRAINT tickets_pkey PRIMARY KEY (id);
+
+
+--
 -- PostgreSQL database dump complete
 --
 
 SET search_path TO "$user", public;
 
-INSERT INTO schema_migrations (version) VALUES ;
+INSERT INTO schema_migrations (version) VALUES ('20160921203659');
 
 

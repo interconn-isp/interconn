@@ -1,19 +1,19 @@
-.new-ticket {
-  .new-ticket-container {
+.tickets-new {
+  .tickets-new-container {
     max-width: 1000px;
     margin: 0 auto;
   }
 
-  .new-ticket-content {
+  .tickets-new-content {
     @include make-row();
   }
 
-  .new-ticket-main {
+  .tickets-new-main {
     @include make-xs-column(12);
     @include make-md-column(7);
   }
 
-  .new-ticket-sidebar {
+  .tickets-new-sidebar {
     @include make-xs-column(12);
     @include make-md-column(5);
   }

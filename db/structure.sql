@@ -105,14 +105,6 @@ ALTER TABLE ONLY ar_internal_metadata
 
 
 --
--- Name: schema_migrations_pkey; Type: CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY schema_migrations
-    ADD CONSTRAINT schema_migrations_pkey PRIMARY KEY (version);
-
-
---
 -- Name: tickets_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -121,11 +113,18 @@ ALTER TABLE ONLY tickets
 
 
 --
+-- Name: unique_schema_migrations; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX unique_schema_migrations ON schema_migrations USING btree (version);
+
+
+--
 -- PostgreSQL database dump complete
 --
 
 SET search_path TO "$user", public;
 
-INSERT INTO schema_migrations (version) VALUES ('20160921203659');
+INSERT INTO schema_migrations (version) VALUES ('0'), ('20160921203659');
 
 

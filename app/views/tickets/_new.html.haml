@@ -1,13 +1,13 @@
-- provide :body_class, 'new-ticket'
+- provide :body_class, 'tickets-new'
 
 .container
   .heading
     %h1.heading-title Non essere timido!
     %p.heading-subtitle Siamo qui per aiutarti. Sempre.
 
-.new-ticket-container
-  .new-ticket-content
-    .new-ticket-main
+.tickets-new-container
+  .tickets-new-content
+    .tickets-new-main
       = simple_form_for @ticket, remote: true do |f|
         .panel.panel-default
           .panel-body
@@ -18,9 +18,14 @@
             = f.input :body
 
           .panel-footer
-            %button.btn.btn-lg.btn-primary{ type: 'submit' } Invia ticket »
+            .panel-footer-actions
+              .panel-footer-action.panel-footer-action-alternate
+                = link_to '« Torna al Centro assistenza', support_path
 
-    .new-ticket-sidebar
+              .panel-footer-action.panel-footer-action-primary
+                %button.btn.btn-primary{ type: 'submit' } Invia ticket »
+
+    .tickets-new-sidebar
       .panel.panel-default
         .panel-heading
           %h3.panel-title Stato dei servizi
@@ -45,7 +50,9 @@
               %span.text-danger Inoperativo
 
         .panel-footer
-          = link_to 'Consulta lo stato dettagliato »', '#'
+          .panel-footer-actions
+            .panel-footer-action.panel-footer-action-primary
+              = link_to 'Consulta lo stato dettagliato', '#'
 
       .panel.panel-default
         .panel-heading
@@ -59,4 +66,6 @@
             %li= link_to 'Come posso pagare?', '#'
 
         .panel-footer
-          = link_to 'Vai alle Domande frequenti »', '#'
+          .panel-footer-actions
+            .panel-footer-action.panel-footer-action-primary
+              = link_to 'Vai alle Domande frequenti', '#'

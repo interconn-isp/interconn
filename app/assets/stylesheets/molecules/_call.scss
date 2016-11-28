@@ -1,0 +1,25 @@
+.call {
+  background-color: $palette-secondary;
+  color: white;
+  padding: 40px 15px;
+}
+
+.call-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: -15px;
+}
+
+.call-text, .call-button {
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.call-text {
+  font-size: ceil(($font-size-large * 1.5));
+  font-weight: 300;
+}

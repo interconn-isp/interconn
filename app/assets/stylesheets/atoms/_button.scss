@@ -2,6 +2,23 @@ $btn-secondary-color: #fff;
 $btn-secondary-bg: $palette-secondary;
 $btn-secondary-border: darken($palette-secondary, 5%);
 
+$btn-call-color: white;
+$btn-call-bg: $palette-primary;
+$btn-call-border: darken($palette-primary, 5%);
+
+.btn {
+  small {
+    display: block;
+    opacity: .75;
+    font-size: $font-size-small;
+  }
+}
+
 .btn-secondary {
   @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+}
+
+.btn-call {
+  @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
+  text-transform: uppercase;
 }

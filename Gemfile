@@ -16,8 +16,6 @@ gem 'sprockets-es6'
 gem 'webpacker'
 
 # Assets
-gem 'jquery-rails'
-gem 'turbolinks'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 

@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.3.3'
+ruby '2.4.0'
 
 # Rails
-gem 'rails', '5.0.0'
+gem 'rails', '5.1.0.beta1'
 gem 'rails-i18n'
 
 # Asset processing
@@ -11,6 +11,9 @@ gem 'autoprefixer-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'sprockets-es6'
+
+# Asset management
+gem 'webpacker'
 
 # Assets
 gem 'jquery-rails'
@@ -75,9 +78,6 @@ group :test do
 end
 
 group :production do
-  # Heroku
-  gem 'rails_12factor'
-
   # Logging
   gem 'lograge'
 end

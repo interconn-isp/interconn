@@ -1,0 +1,16 @@
+version: '2'
+services:
+  db:
+    image: postgres
+  redis:
+    image: redis
+  web:
+    build: .
+    command: foreman start -f Procfile.development
+    volumes:
+      - .:/interconn
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+      - redis

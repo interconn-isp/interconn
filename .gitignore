@@ -86,3 +86,5 @@ pickle-email-*.html
 
 # RSpec temp files
 /spec/examples.txt
+/public/packs
+/node_modules

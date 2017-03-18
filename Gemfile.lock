@@ -42,7 +42,7 @@ GEM
       public_suffix (~> 2.0, >= 2.0.2)
     arel (8.0.0)
     ast (2.3.0)
-    autoprefixer-rails (6.7.6)
+    autoprefixer-rails (6.7.7)
       execjs
     babel-source (5.8.35)
     babel-transpiler (0.7.0)
@@ -97,7 +97,7 @@ GEM
       activesupport (>= 4.1.0)
     haml (4.0.7)
       tilt
-    haml_lint (0.22.0)
+    haml_lint (0.23.2)
       haml (>= 4.0, < 5.1)
       rainbow
       rake (>= 10, < 13)
@@ -133,7 +133,7 @@ GEM
       mini_portile2 (~> 2.1.0)
     parser (2.4.0.0)
       ast (~> 2.2)
-    pg (0.19.0)
+    pg (0.20.0)
     phony (2.15.41)
     phony_rails (0.14.5)
       activesupport (>= 3.0)
@@ -149,7 +149,7 @@ GEM
       interception (>= 0.5)
       pry
     public_suffix (2.0.5)
-    puma (3.7.1)
+    puma (3.8.2)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -248,7 +248,7 @@ GEM
     tilt (2.0.6)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (3.1.4)
+    uglifier (3.1.8)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.1.3)
     webpacker (1.0)

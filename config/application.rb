@@ -47,7 +47,7 @@ module InterConn
 
     # ActionMailer's URL generation configuration.
     config.action_mailer.default_url_options = {
-      host: ENV.fetch('HOST'),
+      host: ENV.fetch('DOMAIN'),
       protocol: (ENV.fetch('FORCE_SSL') == 'true') ? 'https' : 'http'
     }
 

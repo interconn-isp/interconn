@@ -25,9 +25,7 @@ gem 'email_validator'
 gem 'phony_rails'
 
 # Deployment
-gem 'foreman'
 gem 'puma'
-gem 'figaro'
 
 # Views
 gem 'simple_form'
@@ -44,6 +42,10 @@ group :development, :test do
   # RSpec
   gem 'rspec-rails'
   gem 'shoulda-matchers'
+
+  # Orchestration
+  gem 'dotenv-rails'
+  gem 'foreman'
 end
 
 group :development do

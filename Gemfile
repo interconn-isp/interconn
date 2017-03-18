@@ -73,6 +73,9 @@ group :test do
 
   # RSpec
   gem 'fuubar'
+
+  # CircleCI
+  gem 'rspec_junit_formatter'
 end
 
 group :production do

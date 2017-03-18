@@ -1,0 +1,37 @@
+machine:
+  ruby:
+    version:
+      2.4.0
+  environment:
+    PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+    QMAKE: "/usr/lib/x86_64-linux-gnu/qt5/bin/qmake"
+  node:
+    version:
+      7.6.0
+
+dependencies:
+  pre:
+    - sudo apt-get install apt -y
+    - sudo add-apt-repository ppa:beineri/opt-qt542-trusty -y
+    - sudo apt-get update -y; true
+    - sudo apt-get install -y qt54webkit libwebkit-dev libgstreamer0.10-dev
+    - echo "/opt/qt54/bin/qt54-env.sh" >> ~/.circlerc
+  override:
+    - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3
+    - yarn
+  cache_directories:
+    - ~/.cache/yarn
+
+deployment:
+  staging:
+    branch: develop
+    heroku:
+      appname: interconn-staging
+  production:
+    branch: master
+    heroku:
+      appname: interconn-production
+
+test:
+  override:
+    - RAILS_ENV=test bundle exec rspec -r rspec_junit_formatter --format progress --format RspecJunitFormatter -o $CIRCLE_TEST_REPORTS/rspec/junit.xml --require rails_helper

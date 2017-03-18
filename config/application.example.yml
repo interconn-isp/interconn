@@ -1,8 +1,0 @@
-TIME_ZONE: 'Rome'
-SENDGRID_DOMAIN: 'interconn.it'
-SENDGRID_USER: 'YourSendGridUser'
-SENDGRID_PASS: 'YourSendGridPass'
-FORCE_SSL: 'false'
-HOST: 'localhost:5000'
-SECRET_KEY_BASE: 'YourSecretKeyBase'
-PHONE_COUNTRY_CODE: 'IT'

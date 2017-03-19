@@ -5,6 +5,7 @@ machine:
   environment:
     PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
     QMAKE: "/usr/lib/x86_64-linux-gnu/qt5/bin/qmake"
+    DATABASE_URL: postgres://ubuntu:@localhost:5432/circle_test
   node:
     version:
       7.6.0

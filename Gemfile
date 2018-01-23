@@ -20,7 +20,7 @@ gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 
 # ActiveRecord
-gem 'pg'
+gem 'pg', '~> 0.21'
 gem 'email_validator'
 gem 'phony_rails'
 
@@ -36,7 +36,7 @@ gem 'high_voltage'
 
 group :development, :test do
   # Factories
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'faker'
 
   # RSpec
@@ -67,7 +67,7 @@ end
 group :test do
   # Acceptance testing
   gem 'capybara'
-  gem 'capybara-webkit'
+  gem 'capybara-webkit', '>= 1.14'
   gem 'launchy'
 
   # Database cleansing

@@ -81,8 +81,15 @@ pickle-email-*.html
 
 # Configuration files
 /config/database.yml
+*.env*.local
 
 # RSpec temp files
 /spec/examples.txt
 /public/packs
 /node_modules
+/public/packs
+/public/packs-test
+/node_modules
+yarn-debug.log*
+yarn-error.log*
+.yarn-integrity

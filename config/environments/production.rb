@@ -1,5 +1,5 @@
 Rails.application.configure do
-  # Make javascript_pack_tag lookup digest hash to enable long-term caching
+   config.webpacker.check_yarn_integrity = false  # Make javascript_pack_tag lookup digest hash to enable long-term caching
   config.x.webpacker[:digesting] = true
 
   # Settings specified here will take precedence over those in config/application.rb.

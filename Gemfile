@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.4.0'
+ruby '2.5.0'
 
 # Rails
-gem 'rails', '5.1.0.beta1'
+gem 'rails', '~> 5.1'
 gem 'rails-i18n'
 
 # Asset processing

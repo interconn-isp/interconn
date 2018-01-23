@@ -4,16 +4,7 @@ This Rails application serves InterConn's marketing website.
 
 You can see a live version of it running at http://www.interconn.it.
 
-Ruby on Rails
--------------
-
-This application requires:
-
-- Ruby 2.3.0
-- Rails 4.2.6
-
-Getting Started
----------------
+## Getting Started
 
 Clone the Git repository:
 
@@ -48,19 +39,14 @@ $ bundle exec foreman s -f Procfile.development
 
 The application is now running at http://localhost:5000.
 
-Contributing
-------------
+## Contributing
 
-Bug reports and pull requests are welcome on GitHub at
-https://github.com/interconn-isp/interconn.
+Bug reports and pull requests are welcome on GitHub at https://github.com/interconn-isp/interconn.it.
 
-Credits
--------
+## Credits
 
-The application is developed and maintained by [Alessandro Desantis](https://github.com/alessandro1997).
+The application is developed and maintained by [Alessandro Desantis](https://github.com/aldesantis).
 
-License
--------
+## License
 
-The application is available as open source under the terms of the
-[MIT License](http://opensource.org/licenses/MIT).
+The application is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).

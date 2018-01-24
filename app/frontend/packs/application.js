@@ -9,7 +9,7 @@
 
 import Rails from 'rails-ujs'
 import Turbolinks from 'turbolinks/dist/turbolinks'
-// import 'bootstrap'
+import 'bootstrap-sass/assets/javascripts/bootstrap'
 
 import '../styles/styles'
 

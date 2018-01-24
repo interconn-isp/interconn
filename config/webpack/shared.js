@@ -52,9 +52,14 @@ config = {
     new webpack.ProvidePlugin({
       jQuery: 'jquery',
       jquery: 'jquery',
-      $: 'jquery'
+      $: 'jquery',
+      "window.jQuery": 'jquery',
     })
   ],
+
+  externals: {
+    jquery: 'jQuery'
+  },
 
   resolve: {
     extensions: [ '.js', '.coffee' ],

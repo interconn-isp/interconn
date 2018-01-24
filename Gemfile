@@ -15,10 +15,6 @@ gem 'sprockets-es6'
 # Asset management
 gem 'webpacker'
 
-# Assets
-gem 'bootstrap-sass'
-gem 'font-awesome-rails'
-
 # ActiveRecord
 gem 'pg', '~> 0.21'
 gem 'email_validator'
@@ -30,6 +26,7 @@ gem 'puma'
 # Views
 gem 'simple_form'
 gem 'hamlit'
+gem 'font-awesome-rails'
 
 # Static pages
 gem 'high_voltage'

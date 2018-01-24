@@ -59,7 +59,7 @@ config = {
   resolve: {
     extensions: [ '.js', '.coffee' ],
     modules: [
-      path.resolve('app/javascript'),
+      path.resolve('app/frontend'),
       path.resolve('node_modules')
     ],
   },

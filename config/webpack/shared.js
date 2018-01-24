@@ -48,7 +48,12 @@ config = {
   },
 
   plugins: [
-    new webpack.EnvironmentPlugin(Object.keys(process.env))
+    new webpack.EnvironmentPlugin(Object.keys(process.env)),
+    new webpack.ProvidePlugin({
+      jQuery: 'jquery',
+      jquery: 'jquery',
+      $: 'jquery'
+    })
   ],
 
   resolve: {
@@ -56,7 +61,7 @@ config = {
     modules: [
       path.resolve('app/javascript'),
       path.resolve('node_modules')
-    ]
+    ],
   },
 
   resolveLoader: {

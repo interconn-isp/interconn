@@ -7,4 +7,19 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 
-console.log('Hello World from Webpacker')
+import Rails from 'rails-ujs'
+Rails.start()
+
+import Turbolinks from 'turbolinks/dist/turbolinks'
+Turbolinks.start()
+
+// import 'bootstrap'
+
+import ContentToggle from '../components/content_toggle'
+ContentToggle.start()
+
+import Switch from '../components/switch'
+Switch.start()
+
+import Tooltip from '../components/tooltip'
+Tooltip.start()

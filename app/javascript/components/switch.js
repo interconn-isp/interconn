@@ -1,4 +1,14 @@
-class Switch {
+import $ from 'jquery'
+
+export default class Switch {
+  static start() {
+    document.addEventListener('turbolinks:load', () => {
+      document.querySelectorAll('.switch').forEach((element) => {
+        new Switch(element)
+      })
+    })
+  }
+
   constructor(element) {
     this.element = element
     this.toggle = this.element.querySelectorAll('.toggle')[0]
@@ -36,9 +46,3 @@ class Switch {
     })
   }
 }
-
-document.addEventListener('turbolinks:load', () => {
-  document.querySelectorAll('.switch').forEach((element) => {
-    new Switch(element)
-  })
-})

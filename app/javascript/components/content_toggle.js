@@ -1,4 +1,14 @@
-class ContentToggle {
+import $ from 'jquery'
+
+export default class ContentToggle {
+  static start() {
+    document.addEventListener('turbolinks:load', () => {
+      document.querySelectorAll('[data-content-toggle]').forEach((element) => {
+        new ContentToggle(element)
+      })
+    })
+  }
+
   constructor(element) {
     this.element = element
     this.option1 = this._findOptionById(this.element.getAttribute('data-content-toggle-option1'))
@@ -64,9 +74,3 @@ class ContentToggle {
     }
   }
 }
-
-document.addEventListener('turbolinks:load', () => {
-  document.querySelectorAll('[data-content-toggle]').forEach((element) => {
-    new ContentToggle(element)
-  })
-})
